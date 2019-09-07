@@ -19,6 +19,7 @@
   <component name="ProjectId" id="1QUw0RVC6QZmkf3smKg7UnwcJ0t" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -37,7 +38,7 @@
   </component>
   <component name="RunManager">
     <configuration name="MyFirstProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MyFirstProgram" />
+      <option name="MAIN_CLASS_NAME" value="ru.stq.java.sandbox.MyFirstProgram" />
       <module name="Sanbox.main" />
       <method v="2">
         <option name="Make" enabled="true" />
