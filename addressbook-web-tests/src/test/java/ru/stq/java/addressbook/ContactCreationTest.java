@@ -35,7 +35,7 @@ public class ContactCreationTest {
   }
 
   private void submitContactsCreation() {
-    wd.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Notes:'])[1]/following::input[1]")).click();
+    wd.findElement(By.xpath("//input[@name='submit'][2]")).click();
   }
 
   private void fillContactsForm(ContactsData contactsData) {
