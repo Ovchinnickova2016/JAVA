@@ -5,7 +5,6 @@ import ru.stq.java.addressbook.model.GroupData;
 
 public class GroupCreationTest extends TestBase {
 
-
   @Test
   public void testGroupCreation() throws Exception {
 

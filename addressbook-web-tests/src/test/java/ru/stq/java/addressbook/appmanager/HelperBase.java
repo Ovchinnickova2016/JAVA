@@ -5,8 +5,6 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import java.io.NotActiveException;
-
 public class HelperBase {
   protected WebDriver wd;
 
