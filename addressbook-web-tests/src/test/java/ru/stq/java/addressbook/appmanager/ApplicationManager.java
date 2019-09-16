@@ -1,6 +1,5 @@
 package ru.stq.java.addressbook.appmanager;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.concurrent.TimeUnit;
@@ -32,15 +31,11 @@ public class ApplicationManager {
     return groupHelper;
   }
 
-  public NavigationHelper getNavigationHelper() {
-    return navigationHelper;
-  }
-
-  public void goToContactsPage() {
-    wd.findElement(By.linkText("add new")).click();
-  }
-
   public ContactHelper getContactHelper() {
     return contactHelper;
+  }
+
+  public NavigationHelper getNavigationHelper() {
+    return navigationHelper;
   }
 }
