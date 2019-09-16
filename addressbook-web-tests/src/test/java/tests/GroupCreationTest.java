@@ -1,7 +1,6 @@
 package tests;
 
 import org.testng.annotations.*;
-import org.openqa.selenium.*;
 import ru.stq.java.addressbook.model.GroupData;
 
 public class GroupCreationTest extends TestBase {
