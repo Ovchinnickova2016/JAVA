@@ -1,14 +1,15 @@
-package ru.stq.java.addressbook;
+package tests;
 
 import java.util.concurrent.TimeUnit;
 import org.testng.annotations.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import ru.stq.java.addressbook.model.ContactsData;
 
 public class ContactCreationTest {
   private WebDriver wd;
 
-  @BeforeClass(alwaysRun = true)
+  @BeforeMethod(alwaysRun = true)
   public void setUp() throws Exception {
     wd = new FirefoxDriver();
     wd.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -57,7 +58,7 @@ public class ContactCreationTest {
     wd.findElement(By.linkText("add new")).click();
   }
 
-  @AfterClass(alwaysRun = true)
+  @AfterMethod(alwaysRun = true)
   public void tearDown() throws Exception {
     wd.quit();
   }

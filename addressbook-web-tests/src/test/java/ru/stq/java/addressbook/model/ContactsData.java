@@ -1,4 +1,4 @@
-package ru.stq.java.addressbook;
+package ru.stq.java.addressbook.model;
 
 public class ContactsData {
   private final String firstName;

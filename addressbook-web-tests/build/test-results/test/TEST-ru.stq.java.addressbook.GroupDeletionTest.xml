@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stq.java.addressbook.ContactCreationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-16T02:15:57" hostname="DESKTOP-OPO1NB3" time="1.766">
+<testsuite name="ru.stq.java.addressbook.GroupDeletionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-16T02:48:57" hostname="DESKTOP-OPO1NB3" time="0.792">
   <properties/>
-  <testcase name="testContactCreation" classname="ru.stq.java.addressbook.ContactCreationTest" time="1.766"/>
+  <testcase name="testGroupDeletion" classname="ru.stq.java.addressbook.GroupDeletionTest" time="0.792"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[1568600152838	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\alexo\\AppData\\Local\\Temp\\rust_mozprofiledeMHEc"
-1568600153290	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1568600153290	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
-1568600153290	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1568600153291	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+  <system-err><![CDATA[1568602133017	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\alexo\\AppData\\Local\\Temp\\rust_mozprofilewbQpnH"
+1568602133457	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1568602133457	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1568602133457	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1568602133457	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 WARN: compileToBinary(259): 
 C:\fakepath(337,18-133): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
@@ -34,9 +34,19 @@ C:\fakepath(174,1-6): warning X4000: use of potentially uninitialized variable (
 C:\fakepath(225,1): warning X4000: use of potentially uninitialized variable (f_distance_aa)
 C:\fakepath(262,1): warning X4000: use of potentially uninitialized variable (f_do_clip)
 
-1568600156015	Marionette	INFO	Listening on port 53378
-1568600156502	Marionette	WARN	TLS certificate errors will be ignored for this session
-сент. 16, 2019 7:15:56 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+[Child 4276, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1566861941/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+1568602136153	Marionette	INFO	Listening on port 55957
+1568602136207	Marionette	WARN	TLS certificate errors will be ignored for this session
+сент. 16, 2019 7:48:56 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
+1568602138025	Marionette	INFO	Stopped listening on port 55957
+[Child 9600, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1566861941/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+[Child 9600, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1566861941/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+[GPU 5464, Chrome_ChildThread] WARNING: pi
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
 ]]></system-err>
 </testsuite>

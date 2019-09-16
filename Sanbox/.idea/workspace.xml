@@ -71,6 +71,10 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="ru.stq.java.sandbox" />
     </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.stq.java.addressbook.appmanager" />
+      <recent name="ru.stq.java.addressbook" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -84,14 +88,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ContactCreationTest">
-    <configuration name="MyFirstProgram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.stq.java.sandbox.MyFirstProgram" />
-      <module name="Sanbox.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Gradle.GroupDeletionTest">
     <configuration name="ContactCreationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -152,6 +149,26 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="GroupDeletionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.GroupDeletionTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="PointTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -174,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GroupDeletionTest" />
         <item itemvalue="Gradle.ContactCreationTest" />
         <item itemvalue="Gradle.GroupCreationTest" />
         <item itemvalue="Gradle.GroupCreationTests" />
         <item itemvalue="Gradle.PointTest" />
-        <item itemvalue="Application.MyFirstProgram" />
       </list>
     </recent_temporary>
   </component>
