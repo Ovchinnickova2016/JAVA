@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.GroupModificationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-21T07:01:22" hostname="DESKTOP-OPO1NB3" time="1.859">
+<testsuite name="tests.ContactDeletionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-21T07:26:02" hostname="DESKTOP-OPO1NB3" time="0.953">
   <properties/>
-  <testcase name="testGroupModification" classname="tests.GroupModificationTest" time="1.859"/>
+  <testcase name="testContactDeletion" classname="tests.ContactDeletionTest" time="0.953"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[1569049277581	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\alexo\\AppData\\Local\\Temp\\rust_mozprofilelvIlxc"
-1569049278047	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1569049278047	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
-1569049278047	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1569049278047	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+  <system-err><![CDATA[1569050757906	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\alexo\\AppData\\Local\\Temp\\rust_mozprofileDFidJw"
+1569050758369	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569050758369	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569050758369	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569050758369	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 WARN: compileToBinary(259): 
 C:\fakepath(337,18-133): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
@@ -34,17 +34,16 @@ C:\fakepath(174,1-6): warning X4000: use of potentially uninitialized variable (
 C:\fakepath(225,1): warning X4000: use of potentially uninitialized variable (f_distance_aa)
 C:\fakepath(262,1): warning X4000: use of potentially uninitialized variable (f_do_clip)
 
-[Child 5652, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1568726031/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-1569049280920	Marionette	INFO	Listening on port 62543
-1569049281309	Marionette	WARN	TLS certificate errors will be ignored for this session
-сент. 21, 2019 12:01:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[Child 8544, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1568726031/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
+1569050761021	Marionette	INFO	Listening on port 63701
+1569050761103	Marionette	WARN	TLS certificate errors will be ignored for this session
+сент. 21, 2019 12:26:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-1569049284232	Marionette	INFO	Stopped listening on port 62543
-[Child 5652, Chrome_Chil[Parent 11036, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1568726031/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[GPU 1280, C
+1569050763163	Marionette	INFO	Stopped listening on port 63701
+[Child 5464, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1568726031/build/src/ipc/chromium/src/chrome/commo[GPU 13452, Chrome_Child
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
-hrome_ChildThread] WARNING
+Thre
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
 ]]></system-err>
