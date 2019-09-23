@@ -22,6 +22,9 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/../addressbook-web-tests">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -89,12 +92,12 @@
     </option>
   </component>
   <component name="RunManager" selected="Gradle.GroupModificationTest">
-    <configuration name="ContactCreationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ContactDeletionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;tests.ContactCreationTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;tests.ContactDeletionTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -194,8 +197,8 @@
         <item itemvalue="Gradle.GroupModificationTest" />
         <item itemvalue="Gradle.GroupDeletionTest" />
         <item itemvalue="Gradle.GroupCreationTest" />
-        <item itemvalue="Gradle.ContactCreationTest" />
         <item itemvalue="Gradle.ContactModificationTest" />
+        <item itemvalue="Gradle.ContactDeletionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -224,16 +227,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/appmanager/NavigationHelper.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

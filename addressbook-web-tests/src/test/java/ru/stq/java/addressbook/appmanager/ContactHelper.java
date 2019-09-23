@@ -1,7 +1,6 @@
 package ru.stq.java.addressbook.appmanager;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -33,7 +32,7 @@ public class ContactHelper extends HelperBase{
   }
 
   public void selectContact() {
-    click(By.id("7"));
+    click(By.name("selected[]"));
   }
 
   public void deleteSelectedContacts() {
@@ -58,5 +57,20 @@ public class ContactHelper extends HelperBase{
 
   public void submitContactModification() {
     click(By.name("update"));
+  }
+
+  public boolean isThereAContact() {
+    return isElementPresent(By.name("selected[]"));
+  }
+
+  public void goToContactsPage() {
+    click(By.linkText("add new"));
+  }
+
+  public void createContact(ContactsData contactsData) {
+    goToContactsPage();
+    fillContactsForm(contactsData, true);
+    submitContactsCreation();
+    returnToContactPage();
   }
 }
