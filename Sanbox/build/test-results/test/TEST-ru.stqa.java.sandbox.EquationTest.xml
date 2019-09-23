@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stqa.java.sandbox.EquationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-09-23T02:40:38" hostname="DESKTOP-OPO1NB3" time="0.0">
+  <properties/>
+  <testcase name="test0" classname="ru.stqa.java.sandbox.EquationTest" time="0.0"/>
+  <testcase name="test1" classname="ru.stqa.java.sandbox.EquationTest" time="0.0"/>
+  <testcase name="test3" classname="ru.stqa.java.sandbox.EquationTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
