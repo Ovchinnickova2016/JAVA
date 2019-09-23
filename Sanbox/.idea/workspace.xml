@@ -88,7 +88,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.GroupModificationTest">
+  <component name="RunManager" selected="Gradle.ContactCreationTest">
     <configuration name="Equality" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stq.java.sandbox.Equality" />
       <module name="Sanbox.main" />
@@ -122,12 +122,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="EquationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ContactModificationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stqa.java.sandbox.EquationTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;tests.ContactModificationTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -184,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ContactCreationTest" />
+        <item itemvalue="Gradle.ContactModificationTest" />
         <item itemvalue="Gradle.GroupModificationTest" />
         <item itemvalue="Gradle.GroupCreationTest" />
-        <item itemvalue="Gradle.ContactCreationTest" />
         <item itemvalue="Application.Equality" />
-        <item itemvalue="Gradle.EquationTest" />
       </list>
     </recent_temporary>
   </component>
@@ -217,16 +217,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/appmanager/HelperBase.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
