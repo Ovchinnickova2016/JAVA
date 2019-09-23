@@ -88,7 +88,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ContactCreationTest">
+  <component name="RunManager" selected="Gradle.GroupCreationTest">
     <configuration name="Equality" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stq.java.sandbox.Equality" />
       <module name="Sanbox.main" />
@@ -184,10 +184,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GroupCreationTest" />
         <item itemvalue="Gradle.ContactCreationTest" />
         <item itemvalue="Gradle.ContactModificationTest" />
         <item itemvalue="Gradle.GroupModificationTest" />
-        <item itemvalue="Gradle.GroupCreationTest" />
         <item itemvalue="Application.Equality" />
       </list>
     </recent_temporary>
@@ -217,5 +217,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/appmanager/NavigationHelper.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
