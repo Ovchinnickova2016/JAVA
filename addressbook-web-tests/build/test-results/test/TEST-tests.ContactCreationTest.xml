@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.ContactCreationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-23T04:13:32" hostname="DESKTOP-OPO1NB3" time="1.324">
+<testsuite name="tests.ContactCreationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-23T05:17:10" hostname="DESKTOP-OPO1NB3" time="1.244">
   <properties/>
-  <testcase name="testContactCreation" classname="tests.ContactCreationTest" time="1.324"/>
+  <testcase name="testContactCreation" classname="tests.ContactCreationTest" time="1.244"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 7811
+  <system-err><![CDATA[Starting ChromeDriver 76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}) on port 45596
 Only local connections are allowed.
 Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1569212007.244][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
-[1569212009.254][WARNING]: Timed out connecting to Chrome, retrying...
-сент. 23, 2019 9:13:31 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1569215825.532][WARNING]: This version of ChromeDriver has not been tested with Chrome version 77.
+[1569215827.536][WARNING]: Timed out connecting to Chrome, retrying...
+сент. 23, 2019 10:17:09 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
