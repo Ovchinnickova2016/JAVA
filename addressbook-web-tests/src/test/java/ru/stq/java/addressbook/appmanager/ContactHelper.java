@@ -83,12 +83,13 @@ public class ContactHelper extends HelperBase{
     return wd.findElements(By.name("selected[]")).size();
   }
 
-  public List<GroupData> getContactList() {
-    List<GroupData> contacts = new ArrayList<GroupData>();
-    List<WebElement> elements = wd.findElements(By.cssSelector("tr[class='Edit']"));
+  public List<ContactsData> getContactList() {
+    List<ContactsData> contacts = new ArrayList<ContactsData>();
+    List<WebElement> elements = wd.findElements(By.cssSelector("tr.odd"));
     for (WebElement element : elements){
       String name = element.getText();
-      GroupData contact = new GroupData(name, null, null);
+      int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
+      ContactsData contact = new ContactsData(id, "Anastasia", "Galimzyanova", "44423422", "ovchinnickova.anast@gmail.com", "group3");
       contacts.add(contact);
     }
     return contacts;
