@@ -13,6 +13,16 @@ public class ContactsData {
   private String mobile;
   private String work;
   private String address;
+  private String allPhones;
+
+  public String getAllPhones() {
+    return allPhones;
+  }
+
+  public ContactsData withAllPhones(String allphones) {
+    this.allPhones = allphones;
+    return this;
+  }
 
   @Override
   public String toString() {
@@ -62,6 +72,12 @@ public class ContactsData {
     this.address = address;
     return this;
   }
+  public ContactsData withWorkPhone(String work) {
+    this.work = work;
+    return this;
+  }
+
+
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
@@ -120,8 +136,5 @@ public class ContactsData {
     return address;
   }
 
-  public ContactsData withWorkPhone(String work) {
-    this.work = work;
-    return this;
-  }
+
 }
