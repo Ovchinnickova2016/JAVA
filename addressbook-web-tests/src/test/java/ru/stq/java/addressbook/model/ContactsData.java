@@ -9,6 +9,10 @@ public class ContactsData {
   private String phoneNumber;
   private String email;
   private String group;
+  private String home;
+  private String mobile;
+  private String work;
+  private String address;
 
   @Override
   public String toString() {
@@ -42,7 +46,22 @@ public class ContactsData {
     this.email = email;
     return this;
   }
-
+  public ContactsData withHomePhone(String home) {
+    this.home = home;
+    return this;
+  }
+  public ContactsData withMobilePhone(String mobile) {
+    this.mobile = mobile;
+    return this;
+  }
+  public ContactsData withWorkHome(String work) {
+    this.work = work;
+    return this;
+  }
+  public ContactsData withAddress(String address) {
+    this.address = address;
+    return this;
+  }
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
@@ -85,5 +104,24 @@ public class ContactsData {
 
   public int getId() {
     return  id;
+  }
+
+  public String getHomePhone() {
+    return home;
+  }
+  public String getMobilePhone() {
+    return mobile;
+  }
+  public String getWorkPhone() {
+    return work;
+  }
+
+  public String getAddress() {
+    return address;
+  }
+
+  public ContactsData withWorkPhone(String work) {
+    this.work = work;
+    return this;
   }
 }
