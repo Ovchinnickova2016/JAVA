@@ -91,7 +91,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ContactModificationTest.testContactModification">
+  <component name="RunManager" selected="Gradle.Tests in 'ru.stq.java.addressbook.tests'">
     <configuration name="ContactModificationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -194,8 +194,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ContactModificationTest.testContactModification" />
         <item itemvalue="Gradle.Tests in 'ru.stq.java.addressbook.tests'" />
+        <item itemvalue="Gradle.ContactModificationTest.testContactModification" />
         <item itemvalue="Gradle.GroupModificationTest.testGroupModification" />
         <item itemvalue="Gradle.ContactModificationTest" />
         <item itemvalue="Gradle.ru.stq.java.addressbook.tests.ContactDeletionTest and 1 more" />
