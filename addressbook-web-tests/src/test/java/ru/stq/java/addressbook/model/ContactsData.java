@@ -3,11 +3,11 @@ package ru.stq.java.addressbook.model;
 import java.util.Objects;
 
 public class ContactsData {
-  private int id;
-  private final String firstName;
-  private final String lastName;
-  private final String phoneNumber;
-  private final String email;
+  private int id = Integer.MAX_VALUE;;
+  private String firstName;
+  private String lastName;
+  private String phoneNumber;
+  private String email;
   private String group;
 
   @Override
@@ -33,25 +33,33 @@ public class ContactsData {
     return Objects.hash(firstName, lastName);
   }
 
-  public ContactsData(int id, String firstName, String LastName, String phoneNumber, String email, String group) {
+  public ContactsData withId(int id) {
     this.id = id;
-    this.firstName = firstName;
-    lastName = LastName;
-    this.phoneNumber = phoneNumber;
-    this.email = email;
-    this.group = group;
+    return this;
   }
-  public ContactsData(String firstName, String LastName, String phoneNumber, String email, String group) {
-    this.id = Integer.MAX_VALUE;
+  public ContactsData withFirstName(String firstName) {
     this.firstName = firstName;
-    lastName = LastName;
-    this.phoneNumber = phoneNumber;
-    this.email = email;
-    this.group = group;
+    return this;
   }
 
-  public void setId(int id) {
-    this.id = id;
+  public ContactsData withLastName(String lastName) {
+    this.lastName = lastName;
+    return this;
+  }
+
+  public ContactsData withPhoneNumber(String phoneNumber) {
+    this.phoneNumber = phoneNumber;
+    return this;
+  }
+
+  public ContactsData withEmail(String email) {
+    this.email = email;
+    return this;
+  }
+
+  public ContactsData withGroup(String group) {
+    this.group = group;
+    return this;
   }
 
   public String getFirstName() {

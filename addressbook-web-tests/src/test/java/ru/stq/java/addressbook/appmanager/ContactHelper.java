@@ -87,21 +87,18 @@ public class ContactHelper extends HelperBase{
     List<ContactsData> contacts = new ArrayList<ContactsData>();
     List<WebElement> elements = wd.findElements(By.name("entry"));
     for (WebElement element : elements){
-      String name = element.getText();
-      String thurname = element.getText();
-    //  int id = Integer.parseInt(element.findElements(By.tagName("td")).toString());//getAttribute("value"));
      int id = Integer.parseInt(String.valueOf(element.findElement(By.tagName("input")).getAttribute("value")));
       List<WebElement> list = element.findElements(By.tagName("td"));
-      thurname = list.get(1).getText();
-      name = list.get(2).getText();
-      ContactsData contact = new ContactsData(id, name, thurname, "44423422", "ovchinnickova.anast@gmail.com", "group3");
-      contacts.add(contact);
+      String thurname = list.get(1).getText();
+      String name = list.get(2).getText();
+      contacts.add(new ContactsData().withId(id).
+        withFirstName(name).withLastName(thurname).withPhoneNumber("44423422").withEmail("ovchinnickova.anast@gmail.com").withGroup("group3"));
     }
     return contacts;
   }
-  public void modify(int index) {
+  public void modify(int index, ContactsData contact) {
    initContactModification(index);
-   fillContactsForm(new ContactsData("nastya", "Ovchinnickova", "8774354533", "hhhdduu@mail.ru",null),false);
+   fillContactsForm(contact, false);
    submitContactModification();
    returnToContactPage();
   }
