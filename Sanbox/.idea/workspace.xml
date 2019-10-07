@@ -92,12 +92,12 @@
     </option>
   </component>
   <component name="RunManager" selected="Gradle.Tests in 'ru.stq.java.addressbook.tests'">
-    <configuration name="ContactCreationTest.testContactCreation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ContactModificationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;tests.ContactCreationTest.testContactCreation&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.ContactModificationTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -112,12 +112,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ContactModificationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ContactModificationTest.testContactModification" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;tests.ContactModificationTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.ContactModificationTest.testContactModification&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -172,12 +172,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="tests.ContactCreationTest and 5 more" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ru.stq.java.addressbook.tests.ContactDeletionTest and 1 more" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;tests.ContactCreationTest&quot; --tests &quot;tests.ContactDeletionTest&quot; --tests &quot;tests.ContactModificationTest&quot; --tests &quot;tests.GroupCreationTest&quot; --tests &quot;tests.GroupDeletionTest&quot; --tests &quot;tests.GroupModificationTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.ContactDeletionTest&quot; --tests &quot;ru.stq.java.addressbook.tests.GroupDeletionTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -195,10 +195,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Tests in 'ru.stq.java.addressbook.tests'" />
+        <item itemvalue="Gradle.ContactModificationTest.testContactModification" />
         <item itemvalue="Gradle.ContactModificationTest" />
-        <item itemvalue="Gradle.Tests in 'tests'" />
-        <item itemvalue="Gradle.tests.ContactCreationTest and 5 more" />
-        <item itemvalue="Gradle.ContactCreationTest.testContactCreation" />
+        <item itemvalue="Gradle.ru.stq.java.addressbook.tests.ContactDeletionTest and 1 more" />
+        <item itemvalue="Gradle.ContactModificationTest" />
       </list>
     </recent_temporary>
   </component>

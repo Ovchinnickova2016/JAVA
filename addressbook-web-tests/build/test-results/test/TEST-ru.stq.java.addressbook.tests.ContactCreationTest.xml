@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stq.java.addressbook.tests.ContactCreationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-07T04:47:45" hostname="DESKTOP-OPO1NB3" time="2.676">
+<testsuite name="ru.stq.java.addressbook.tests.ContactCreationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-07T05:30:56" hostname="DESKTOP-OPO1NB3" time="2.466">
   <properties/>
-  <testcase name="testContactCreation" classname="ru.stq.java.addressbook.tests.ContactCreationTest" time="2.676"/>
+  <testcase name="testContactCreation" classname="ru.stq.java.addressbook.tests.ContactCreationTest" time="2.466"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

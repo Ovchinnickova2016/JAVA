@@ -19,20 +19,6 @@ public class ContactsData {
       '}';
   }
 
-  @Override
-  public boolean equals(Object o) {
-    if (this == o) return true;
-    if (o == null || getClass() != o.getClass()) return false;
-    ContactsData that = (ContactsData) o;
-    return Objects.equals(firstName, that.firstName) &&
-      Objects.equals(lastName, that.lastName);
-  }
-
-  @Override
-  public int hashCode() {
-    return Objects.hash(firstName, lastName);
-  }
-
   public ContactsData withId(int id) {
     this.id = id;
     return this;
@@ -55,6 +41,21 @@ public class ContactsData {
   public ContactsData withEmail(String email) {
     this.email = email;
     return this;
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+    ContactsData that = (ContactsData) o;
+    return id == that.id &&
+      Objects.equals(firstName, that.firstName) &&
+      Objects.equals(lastName, that.lastName);
+  }
+
+  @Override
+  public int hashCode() {
+    return Objects.hash(id, firstName, lastName);
   }
 
   public ContactsData withGroup(String group) {
