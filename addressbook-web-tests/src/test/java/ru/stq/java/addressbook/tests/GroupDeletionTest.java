@@ -1,4 +1,4 @@
-package tests;
+package ru.stq.java.addressbook.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

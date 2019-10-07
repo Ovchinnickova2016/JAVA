@@ -91,7 +91,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ContactCreationTest.testContactCreation">
+  <component name="RunManager" selected="Gradle.ContactModificationTest">
     <configuration name="ContactCreationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -132,12 +132,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GroupCreationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ContactModificationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;tests.GroupCreationTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;tests.ContactModificationTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -152,12 +152,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GroupDeletionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'tests'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;tests.GroupDeletionTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;tests.*&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -172,12 +172,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GroupModificationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="tests.ContactCreationTest and 5 more" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;tests.GroupModificationTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;tests.ContactCreationTest&quot; --tests &quot;tests.ContactDeletionTest&quot; --tests &quot;tests.ContactModificationTest&quot; --tests &quot;tests.GroupCreationTest&quot; --tests &quot;tests.GroupDeletionTest&quot; --tests &quot;tests.GroupModificationTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -194,11 +194,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ContactModificationTest" />
+        <item itemvalue="Gradle.Tests in 'tests'" />
+        <item itemvalue="Gradle.tests.ContactCreationTest and 5 more" />
         <item itemvalue="Gradle.ContactCreationTest.testContactCreation" />
         <item itemvalue="Gradle.ContactCreationTest" />
-        <item itemvalue="Gradle.GroupModificationTest" />
-        <item itemvalue="Gradle.GroupDeletionTest" />
-        <item itemvalue="Gradle.GroupCreationTest" />
       </list>
     </recent_temporary>
   </component>

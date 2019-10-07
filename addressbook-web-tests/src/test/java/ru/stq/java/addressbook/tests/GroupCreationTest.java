@@ -1,11 +1,10 @@
-package tests;
+package ru.stq.java.addressbook.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.*;
 import ru.stq.java.addressbook.model.GroupData;
 
 import java.util.Comparator;
-import java.util.HashSet;
 import java.util.List;
 
 public class GroupCreationTest extends TestBase {

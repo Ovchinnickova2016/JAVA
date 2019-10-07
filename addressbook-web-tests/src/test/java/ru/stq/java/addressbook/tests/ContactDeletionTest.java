@@ -1,9 +1,8 @@
-package tests;
+package ru.stq.java.addressbook.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import ru.stq.java.addressbook.model.ContactsData;
-import ru.stq.java.addressbook.model.GroupData;
 
 import java.util.List;
 
