@@ -99,4 +99,10 @@ public class ContactHelper extends HelperBase{
     }
     return contacts;
   }
+  public void modifyContact(int index) {
+   initContactModification(index);
+   fillContactsForm(new ContactsData("nastya", "Ovchinnickova", "8774354533", "hhhdduu@mail.ru",null),false);
+   submitContactModification();
+   returnToContactPage();
+  }
 }

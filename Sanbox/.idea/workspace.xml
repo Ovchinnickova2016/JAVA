@@ -232,72 +232,47 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/appmanager/ContactHelper.java</url>
-          <line>88</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/appmanager/ContactHelper.java</url>
-          <line>92</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/appmanager/ContactHelper.java</url>
-          <line>93</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/appmanager/ContactHelper.java</url>
-          <line>94</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/appmanager/ContactHelper.java</url>
-          <line>95</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/tests/ContactCreationTest.java</url>
+          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/tests/ContactCreationTest.java</url>
           <line>15</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/tests/ContactCreationTest.java</url>
+          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/tests/ContactCreationTest.java</url>
           <line>17</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/tests/ContactCreationTest.java</url>
+          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/tests/ContactCreationTest.java</url>
           <line>18</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/tests/ContactCreationTest.java</url>
+          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/tests/ContactCreationTest.java</url>
           <line>19</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/tests/ContactCreationTest.java</url>
+          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/tests/ContactCreationTest.java</url>
           <line>20</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/tests/ContactCreationTest.java</url>
+          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/tests/ContactCreationTest.java</url>
           <line>22</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/tests/ContactCreationTest.java</url>
+          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/tests/ContactCreationTest.java</url>
           <line>24</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/tests/ContactCreationTest.java</url>
+          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/tests/ContactCreationTest.java</url>
           <line>25</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/tests/ContactCreationTest.java</url>
+          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/tests/ContactCreationTest.java</url>
           <line>26</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
