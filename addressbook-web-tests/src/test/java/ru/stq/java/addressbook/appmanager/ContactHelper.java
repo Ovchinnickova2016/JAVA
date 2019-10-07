@@ -72,7 +72,7 @@ public class ContactHelper extends HelperBase{
     click(By.linkText("add new"));
   }
 
-  public void createContact(ContactsData contactsData) {
+  public void create(ContactsData contactsData) {
     goToContactsPage();
     fillContactsForm(contactsData, true);
     submitContactsCreation();
@@ -83,7 +83,7 @@ public class ContactHelper extends HelperBase{
     return wd.findElements(By.name("selected[]")).size();
   }
 
-  public List<ContactsData> getContactList() {
+  public List<ContactsData> list() {
     List<ContactsData> contacts = new ArrayList<ContactsData>();
     List<WebElement> elements = wd.findElements(By.name("entry"));
     for (WebElement element : elements){
@@ -99,10 +99,17 @@ public class ContactHelper extends HelperBase{
     }
     return contacts;
   }
-  public void modifyContact(int index) {
+  public void modify(int index) {
    initContactModification(index);
    fillContactsForm(new ContactsData("nastya", "Ovchinnickova", "8774354533", "hhhdduu@mail.ru",null),false);
    submitContactModification();
+   returnToContactPage();
+  }
+
+  public void delete(int index) {
+   selectContact(index);
+   deleteSelectedContacts();
+   submitContactDeletion();
    returnToContactPage();
   }
 }
