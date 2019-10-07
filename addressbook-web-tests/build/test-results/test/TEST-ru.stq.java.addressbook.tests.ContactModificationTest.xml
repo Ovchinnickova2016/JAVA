@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stq.java.addressbook.tests.ContactModificationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-07T06:17:33" hostname="DESKTOP-OPO1NB3" time="1.615">
-  <properties/>
-  <testcase name="testContactModification" classname="ru.stq.java.addressbook.tests.ContactModificationTest" time="1.615"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

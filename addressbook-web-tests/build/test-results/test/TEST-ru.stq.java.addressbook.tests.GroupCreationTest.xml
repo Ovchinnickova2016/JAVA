@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stq.java.addressbook.tests.GroupCreationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-07T06:17:34" hostname="DESKTOP-OPO1NB3" time="1.748">
-  <properties/>
-  <testcase name="testGroupCreation" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="1.748"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
