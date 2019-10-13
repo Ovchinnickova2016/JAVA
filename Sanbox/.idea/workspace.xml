@@ -95,7 +95,7 @@
     <configuration name="ContactDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stq.java.addressbook.generators.ContactDataGenerator" />
       <module name="addressbook-web-tests.test" />
-      <option name="PROGRAM_PARAMETERS" value="10 src/test/resources/contacts.csv" />
+      <option name="PROGRAM_PARAMETERS" value="-c 20 -f src/test/resources/contacts.csv" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../addressbook-web-tests" />
       <extension name="coverage">
         <pattern>
@@ -107,10 +107,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupDataGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="GroupDataGenerator" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stq.java.addressbook.generators.GroupDataGenerator" />
       <module name="addressbook-web-tests.test" />
-      <option name="PROGRAM_PARAMETERS" value="10 src/test/resources/groups.csv" />
+      <option name="PROGRAM_PARAMETERS" value="-c 20 -f src/test/resources/groups.csv" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../addressbook-web-tests" />
       <extension name="coverage">
         <pattern>
@@ -192,7 +192,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.ContactDataGenerator" />
-        <item itemvalue="Application.GroupDataGenerator" />
         <item itemvalue="Gradle.ContactCreationTest" />
         <item itemvalue="Gradle.ContactCreationTest.testCurrentDir" />
         <item itemvalue="Gradle.ru.stq.java.addressbook.tests.GroupCreationTest and 2 more" />
