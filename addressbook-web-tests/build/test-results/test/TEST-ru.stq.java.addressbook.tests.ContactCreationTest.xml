@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stq.java.addressbook.tests.ContactCreationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-10-13T06:11:16" hostname="DESKTOP-OPO1NB3" time="4.658">
+<testsuite name="ru.stq.java.addressbook.tests.ContactCreationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2019-10-13T08:30:23" hostname="DESKTOP-OPO1NB3" time="12.847">
   <properties/>
-  <testcase name="testContactCreation" classname="ru.stq.java.addressbook.tests.ContactCreationTest" time="4.658"/>
+  <testcase name="testContactCreation[0](ContactsData{id=2147483647, firstName='nastya', lastName='Ovchinnickova'})" classname="ru.stq.java.addressbook.tests.ContactCreationTest" time="4.423"/>
+  <testcase name="testContactCreation[1](ContactsData{id=2147483647, firstName='nastya2', lastName='Ovchinnickova2'})" classname="ru.stq.java.addressbook.tests.ContactCreationTest" time="4.03"/>
+  <testcase name="testContactCreation[2](ContactsData{id=2147483647, firstName='nastya3', lastName='Ovchinnickova3'})" classname="ru.stq.java.addressbook.tests.ContactCreationTest" time="4.392"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
