@@ -3,6 +3,8 @@ package ru.stq.java.addressbook.generators;
 import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
 import com.beust.jcommander.ParameterException;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.thoughtworks.xstream.XStream;
 import ru.stq.java.addressbook.model.ContactsData;
 import ru.stq.java.addressbook.model.GroupData;
@@ -46,9 +48,20 @@ public class ContactDataGenerator {
     else if (format.equals("xml")){
       saveAsXML(contacts, new File(file));
     }
+    else if (format.equals("json")){
+      saveAsJSON(contacts, new File(file));
+    }
     else {
       System.out.println("Unrecognized format" + format);
     }
+  }
+
+  private void saveAsJSON(List<ContactsData> contacts, File file) throws IOException {
+    Gson gson = new GsonBuilder().setPrettyPrinting().excludeFieldsWithoutExposeAnnotation().create();
+    String json = gson.toJson(contacts);
+    Writer writer = new FileWriter(file);
+    writer.write(json);
+    writer.close();
   }
 
   private void saveAsXML(List<ContactsData> contacts, File file) throws IOException {
