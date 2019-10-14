@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stq.java.addressbook.tests.GroupCreationTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-10-14T07:45:46" hostname="DESKTOP-OPO1NB3" time="15.277">
+<testsuite name="ru.stq.java.addressbook.tests.GroupCreationTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-10-14T08:11:45" hostname="DESKTOP-OPO1NB3" time="26.536">
   <properties/>
-  <testcase name="testGroupCreation[0](GroupData{id='2147483647', name='test 0'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="3.877"/>
-  <testcase name="testGroupCreation[1](GroupData{id='2147483647', name='test 1'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="2.918"/>
-  <testcase name="testGroupCreation[2](GroupData{id='2147483647', name='test 2'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="2.628"/>
-  <testcase name="testGroupCreation[3](GroupData{id='2147483647', name='test 3'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="3.159"/>
-  <testcase name="testGroupCreation[4](GroupData{id='2147483647', name='test 4'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="2.694"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="testGroupCreation[0](GroupData{id='2147483647', name='test 0'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="7.88"/>
+  <testcase name="testGroupCreation[1](GroupData{id='2147483647', name='test 1'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="4.565"/>
+  <testcase name="testGroupCreation[2](GroupData{id='2147483647', name='test 2'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="4.634"/>
+  <testcase name="testGroupCreation[3](GroupData{id='2147483647', name='test 3'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="4.646"/>
+  <testcase name="testGroupCreation[4](GroupData{id='2147483647', name='test 4'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="4.811"/>
+  <system-out><![CDATA[13:11:45.921 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 0'}]
+13:11:53.817 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Stop test testGroupCreation
+13:11:53.817 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 1'}]
+13:11:58.382 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Stop test testGroupCreation
+13:11:58.382 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 2'}]
+13:12:03.016 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Stop test testGroupCreation
+13:12:03.016 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 3'}]
+13:12:07.662 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Stop test testGroupCreation
+13:12:07.662 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 4'}]
+13:12:12.473 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Stop test testGroupCreation
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

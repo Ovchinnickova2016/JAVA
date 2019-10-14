@@ -15,3 +15,4 @@ gradle-app.setting
 .idea/workspace.xml
 Sanbox/.idea/workspace.xml
 Sanbox/.idea/workspace.xml
+*.log
