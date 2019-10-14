@@ -11,16 +11,19 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Properties;
 import java.util.stream.Collectors;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 public class GroupCreationTest extends TestBase {
-
+  private final Properties properties = new Properties();;
   @DataProvider
   public Iterator<Object[]> validGroupsFromXML() throws IOException {
-    try(BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/groups.xml")))){
+    String target = System.getProperty("target","local");
+    properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
+    try(BufferedReader reader = new BufferedReader(new FileReader(new File(properties.getProperty("groups.xml"))))){
       String xml = "";
       String line = reader.readLine();
       while (line != null){
@@ -36,7 +39,9 @@ public class GroupCreationTest extends TestBase {
 
   @DataProvider
   public Iterator<Object[]> validGroupsFromJSON() throws IOException {
-    try(BufferedReader reader = new BufferedReader(new FileReader(new File("src/test/resources/groups.json")))) {
+    String target = System.getProperty("target","local");
+    properties.load(new FileReader(new File(String.format("src/test/resources/%s.properties", target))));
+    try(BufferedReader reader = new BufferedReader(new FileReader(new File(properties.getProperty("groups.json"))))) {
       String json = "";
       String line = reader.readLine();
       while (line != null) {
