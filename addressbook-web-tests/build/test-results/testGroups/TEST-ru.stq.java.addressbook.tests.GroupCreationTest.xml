@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stq.java.addressbook.tests.GroupCreationTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-10-14T06:35:37" hostname="DESKTOP-OPO1NB3" time="18.59">
+  <properties/>
+  <testcase name="testGroupCreation[0](GroupData{id='2147483647', name='test 0'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="5.046"/>
+  <testcase name="testGroupCreation[1](GroupData{id='2147483647', name='test 1'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="3.343"/>
+  <testcase name="testGroupCreation[2](GroupData{id='2147483647', name='test 2'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="3.359"/>
+  <testcase name="testGroupCreation[3](GroupData{id='2147483647', name='test 3'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="3.41"/>
+  <testcase name="testGroupCreation[4](GroupData{id='2147483647', name='test 4'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="3.432"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

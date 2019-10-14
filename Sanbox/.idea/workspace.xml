@@ -91,7 +91,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ru.stq.java.addressbook.tests.ContactModificationTest and 2 more">
+  <component name="RunManager" selected="Gradle.ContactCreationTest">
     <configuration name="GroupDataGenerator" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stq.java.addressbook.generators.GroupDataGenerator" />
       <module name="addressbook-web-tests.test" />
@@ -127,32 +127,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GroupCreationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ContactCreationTest.testContactCreation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.GroupCreationTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ru.stq.java.addressbook.tests.ContactCreationTest and 1 more" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.ContactCreationTest&quot; --tests &quot;ru.stq.java.addressbook.tests.GroupCreationTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.ContactCreationTest.testContactCreation[*0*]&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -207,21 +187,31 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="F:/НАСТЯ/JAVA/JAVA/addressbook-web-tests/src/test/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/../addressbook-web-tests/src/test/resources/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.GroupDataGenerator" />
-      <item itemvalue="Gradle.ContactCreationTest" />
-      <item itemvalue="Gradle.GroupCreationTest" />
-      <item itemvalue="Gradle.ru.stq.java.addressbook.tests.ContactCreationTest and 1 more" />
       <item itemvalue="Gradle.ru.stq.java.addressbook.tests.ContactDeletionTest and 4 more" />
       <item itemvalue="Gradle.ru.stq.java.addressbook.tests.ContactModificationTest and 2 more" />
+      <item itemvalue="TestNG.F:/НАСТЯ/JAVA/JAVA/addressbook-web-tests/src/test/resources/testng.xml" />
+      <item itemvalue="Gradle.ContactCreationTest.testContactCreation" />
+      <item itemvalue="Gradle.ContactCreationTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ContactCreationTest" />
+        <item itemvalue="Gradle.ContactCreationTest.testContactCreation" />
+        <item itemvalue="TestNG.F:/НАСТЯ/JAVA/JAVA/addressbook-web-tests/src/test/resources/testng.xml" />
         <item itemvalue="Gradle.ru.stq.java.addressbook.tests.ContactModificationTest and 2 more" />
         <item itemvalue="Gradle.ru.stq.java.addressbook.tests.ContactDeletionTest and 4 more" />
-        <item itemvalue="Gradle.ru.stq.java.addressbook.tests.ContactCreationTest and 1 more" />
-        <item itemvalue="Gradle.GroupCreationTest" />
-        <item itemvalue="Gradle.ContactCreationTest" />
       </list>
     </recent_temporary>
   </component>
