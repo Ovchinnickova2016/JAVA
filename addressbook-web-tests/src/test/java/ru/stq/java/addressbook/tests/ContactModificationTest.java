@@ -22,7 +22,7 @@ public class ContactModificationTest extends TestBase {
   public void testContactModification (){
     Contacts before = app.db().contacts();
     ContactsData modifiedContact = before.iterator().next();
-    ContactsData contact = new ContactsData().withId(modifiedContact.getId()).withEmail("ovchinnickova.anast@gmail.com").withEmail2("ovch@gmail.com").withEmail3("galim@gmail.com").withFirstName("nastya").withLastName("Ovchinnickova").withMobilePhone("44423422").withWorkPhone("231").withHomePhone("3232").withAddress("2 dd 3").withGroup("group3");
+    ContactsData contact = new ContactsData().withId(modifiedContact.getId()).withEmail("anast@gmail.com").withEmail2("ovh@gmail.com").withEmail3("gal@gmail.com").withFirstName("ana").withLastName("Ovickova").withMobilePhone("443422").withWorkPhone("255531").withHomePhone("3050232").withAddress("2 street").withGroup("group43");
     app.contact().gotoContactPage();
     app.contact().modify(contact);
     assertEquals( app.contact().count() ,before.size());
