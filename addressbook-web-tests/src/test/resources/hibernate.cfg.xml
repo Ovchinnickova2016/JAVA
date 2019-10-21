@@ -50,6 +50,7 @@
 
 
     <mapping class="ru.stq.java.addressbook.model.GroupData"/>
+        <mapping class="ru.stq.java.addressbook.model.ContactsData"/>
 
 </session-factory>
 

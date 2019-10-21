@@ -3,54 +3,74 @@ package ru.stq.java.addressbook.model;
 import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
+import org.hibernate.annotations.Type;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.File;
 import java.util.Objects;
 @XStreamAlias("contact")
+@Entity
+@Table(name = "addressbook")
 public class ContactsData {
   @XStreamOmitField
   @Id
-  @Column(name = "contact_id")
+  @Column(name = "id")
   private int id = Integer.MAX_VALUE;;
   @Expose
-  @Column(name = "contact_firstname")
+  @Column(name = "firstname")
   private String firstName;
   @Expose
-  @Column(name = "contact_lastname")
+  @Column(name = "lastname")
   private String lastName;
   @Expose
-  @Column(name = "contact_phonenumber")
+  @Column(name = "home")
+  @Type(type = "text")
+  private String home;
+  @Transient
   private String phoneNumber;
   @Expose
-  @Column(name = "contact_email")
+  @Column(name = "mobile")
+  @Type(type = "text")
+  private String mobile;
+  @Expose
+  @Column(name = "work")
+  @Type(type = "text")
+  private String work;
+  @Expose
+  @Column(name = "email")
+  @Type(type = "text")
   private String email;
   @Expose
-  @Column(name = "contact_email2")
+  @Column(name = "email2")
+  @Type(type = "text")
   private String email2;
   @Expose
-  @Column(name = "contact_email3")
+  @Column(name = "email3")
+  @Type(type = "text")
   private String email3;
   @Expose
+  @Transient
   private String allEmailes;
+  @Transient
+  private String group;
+  @Transient
+  private String address;
+  @Transient
+  private String allPhones;
+  @Column(name = "photo")
+  @Type(type = "text")
+  private String photo;
 
   public File getPhoto() {
-    return photo;
+    return new File(photo);
   }
 
   public ContactsData withPhoto(File photo) {
-    this.photo = photo;
+    this.photo = photo.getPath();
     return this;
   }
 
-  private String group;
-  private String home;
-  private String mobile;
-  private String work;
-  private String address;
-  private String allPhones;
-  private File photo;
+
 
   public String getAllPhones() {
     return allPhones;

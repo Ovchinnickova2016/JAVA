@@ -91,7 +91,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.HbConnectionTest">
+  <component name="RunManager" selected="Gradle.HbConnectionTest.hbConnectionTest">
     <configuration name="GroupDataGenerator" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stq.java.addressbook.generators.GroupDataGenerator" />
       <module name="addressbook-web-tests.test" />
@@ -217,8 +217,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.HbConnectionTest" />
         <item itemvalue="Gradle.HbConnectionTest.hbConnectionTest" />
+        <item itemvalue="Gradle.HbConnectionTest" />
         <item itemvalue="Gradle.DbConnectionTest" />
         <item itemvalue="Gradle.DbConnectionTest.testDbConnection" />
         <item itemvalue="Gradle.GroupCreationTest.testGroupCreation" />
@@ -276,7 +276,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/tests/HbConnectionTest.java</url>
-          <line>13</line>
+          <line>14</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
