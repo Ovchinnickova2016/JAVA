@@ -4,23 +4,33 @@ import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
 
+import javax.persistence.Column;
+import javax.persistence.Id;
 import java.io.File;
 import java.util.Objects;
 @XStreamAlias("contact")
 public class ContactsData {
   @XStreamOmitField
+  @Id
+  @Column(name = "contact_id")
   private int id = Integer.MAX_VALUE;;
   @Expose
+  @Column(name = "contact_firstname")
   private String firstName;
   @Expose
+  @Column(name = "contact_lastname")
   private String lastName;
   @Expose
+  @Column(name = "contact_phonenumber")
   private String phoneNumber;
   @Expose
+  @Column(name = "contact_email")
   private String email;
   @Expose
+  @Column(name = "contact_email2")
   private String email2;
   @Expose
+  @Column(name = "contact_email3")
   private String email3;
   @Expose
   private String allEmailes;
