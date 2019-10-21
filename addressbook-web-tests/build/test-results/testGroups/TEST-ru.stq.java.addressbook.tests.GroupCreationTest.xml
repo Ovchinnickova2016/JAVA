@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stq.java.addressbook.tests.GroupCreationTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-10-14T08:11:45" hostname="DESKTOP-OPO1NB3" time="26.536">
+<testsuite name="ru.stq.java.addressbook.tests.GroupCreationTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-10-21T07:28:38" hostname="DESKTOP-OPO1NB3" time="7.088">
   <properties/>
-  <testcase name="testGroupCreation[0](GroupData{id='2147483647', name='test 0'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="7.88"/>
-  <testcase name="testGroupCreation[1](GroupData{id='2147483647', name='test 1'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="4.565"/>
-  <testcase name="testGroupCreation[2](GroupData{id='2147483647', name='test 2'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="4.634"/>
-  <testcase name="testGroupCreation[3](GroupData{id='2147483647', name='test 3'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="4.646"/>
-  <testcase name="testGroupCreation[4](GroupData{id='2147483647', name='test 4'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="4.811"/>
-  <system-out><![CDATA[13:11:45.921 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 0'}]
-13:11:53.817 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Stop test testGroupCreation
-13:11:53.817 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 1'}]
-13:11:58.382 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Stop test testGroupCreation
-13:11:58.382 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 2'}]
-13:12:03.016 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Stop test testGroupCreation
-13:12:03.016 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 3'}]
-13:12:07.662 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Stop test testGroupCreation
-13:12:07.662 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 4'}]
-13:12:12.473 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Stop test testGroupCreation
+  <testcase name="testGroupCreation[0](GroupData{id='2147483647', name='test 0'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="1.854"/>
+  <testcase name="testGroupCreation[1](GroupData{id='2147483647', name='test 1'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="1.334"/>
+  <testcase name="testGroupCreation[2](GroupData{id='2147483647', name='test 2'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="1.349"/>
+  <testcase name="testGroupCreation[3](GroupData{id='2147483647', name='test 3'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="1.26"/>
+  <testcase name="testGroupCreation[4](GroupData{id='2147483647', name='test 4'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="1.285"/>
+  <system-out><![CDATA[12:28:38.579 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 0'}]
+Hibernate: select groupdata0_.group_id as group_id1_1_, groupdata0_.group_footer as group_fo2_1_, groupdata0_.group_header as group_he3_1_, groupdata0_.group_name as group_na4_1_ from group_list groupdata0_
+Hibernate: select groupdata0_.group_id as group_id1_1_, groupdata0_.group_footer as group_fo2_1_, groupdata0_.group_header as group_he3_1_, groupdata0_.group_name as group_na4_1_ from group_list groupdata0_
+12:28:40.435 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Stop test testGroupCreation
+12:28:40.435 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 1'}]
+Hibernate: select groupdata0_.group_id as group_id1_1_, groupdata0_.group_footer as group_fo2_1_, groupdata0_.group_header as group_he3_1_, groupdata0_.group_name as group_na4_1_ from group_list groupdata0_
+Hibernate: select groupdata0_.group_id as group_id1_1_, groupdata0_.group_footer as group_fo2_1_, groupdata0_.group_header as group_he3_1_, groupdata0_.group_name as group_na4_1_ from group_list groupdata0_
+12:28:41.771 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Stop test testGroupCreation
+12:28:41.771 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 2'}]
+Hibernate: select groupdata0_.group_id as group_id1_1_, groupdata0_.group_footer as group_fo2_1_, groupdata0_.group_header as group_he3_1_, groupdata0_.group_name as group_na4_1_ from group_list groupdata0_
+Hibernate: select groupdata0_.group_id as group_id1_1_, groupdata0_.group_footer as group_fo2_1_, groupdata0_.group_header as group_he3_1_, groupdata0_.group_name as group_na4_1_ from group_list groupdata0_
+12:28:43.120 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Stop test testGroupCreation
+12:28:43.121 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 3'}]
+Hibernate: select groupdata0_.group_id as group_id1_1_, groupdata0_.group_footer as group_fo2_1_, groupdata0_.group_header as group_he3_1_, groupdata0_.group_name as group_na4_1_ from group_list groupdata0_
+Hibernate: select groupdata0_.group_id as group_id1_1_, groupdata0_.group_footer as group_fo2_1_, groupdata0_.group_header as group_he3_1_, groupdata0_.group_name as group_na4_1_ from group_list groupdata0_
+12:28:44.381 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Stop test testGroupCreation
+12:28:44.382 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 4'}]
+Hibernate: select groupdata0_.group_id as group_id1_1_, groupdata0_.group_footer as group_fo2_1_, groupdata0_.group_header as group_he3_1_, groupdata0_.group_name as group_na4_1_ from group_list groupdata0_
+Hibernate: select groupdata0_.group_id as group_id1_1_, groupdata0_.group_footer as group_fo2_1_, groupdata0_.group_header as group_he3_1_, groupdata0_.group_name as group_na4_1_ from group_list groupdata0_
+12:28:45.668 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Stop test testGroupCreation
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -91,7 +91,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.HbConnectionTest.hbConnectionTest">
+  <component name="RunManager" selected="Gradle.ContactModificationTest">
     <configuration name="GroupDataGenerator" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stq.java.addressbook.generators.GroupDataGenerator" />
       <module name="addressbook-web-tests.test" />
@@ -107,32 +107,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DbConnectionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ContactCreationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.DbConnectionTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="DbConnectionTest.testDbConnection" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.DbConnectionTest.testDbConnection&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.ContactCreationTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -147,19 +127,19 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GroupCreationTest.testGroupCreation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ContactDeletionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.GroupCreationTest.testGroupCreation&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.ContactDeletionTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":cleanTestGroups" />
-            <option value=":testGroups" />
+            <option value=":cleanTestContacts" />
+            <option value=":testContacts" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -167,19 +147,19 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="HbConnectionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ContactModificationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.HbConnectionTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.ContactModificationTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
+            <option value=":cleanTestContacts" />
+            <option value=":testContacts" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -187,19 +167,39 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="HbConnectionTest.hbConnectionTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ContactModificationTest.testContactModification" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.HbConnectionTest.hbConnectionTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.ContactModificationTest.testContactModification&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
+            <option value=":cleanTestContacts" />
+            <option value=":testContacts" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ContactPhoneTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.ContactPhoneTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTestContacts" />
+            <option value=":testContacts" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -209,19 +209,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.GroupDataGenerator" />
-      <item itemvalue="Gradle.GroupCreationTest.testGroupCreation" />
-      <item itemvalue="Gradle.DbConnectionTest" />
-      <item itemvalue="Gradle.DbConnectionTest.testDbConnection" />
-      <item itemvalue="Gradle.HbConnectionTest" />
-      <item itemvalue="Gradle.HbConnectionTest.hbConnectionTest" />
+      <item itemvalue="Gradle.ContactCreationTest" />
+      <item itemvalue="Gradle.ContactDeletionTest" />
+      <item itemvalue="Gradle.ContactModificationTest" />
+      <item itemvalue="Gradle.ContactPhoneTest" />
+      <item itemvalue="Gradle.ContactModificationTest.testContactModification" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.HbConnectionTest.hbConnectionTest" />
-        <item itemvalue="Gradle.HbConnectionTest" />
-        <item itemvalue="Gradle.DbConnectionTest" />
-        <item itemvalue="Gradle.DbConnectionTest.testDbConnection" />
-        <item itemvalue="Gradle.GroupCreationTest.testGroupCreation" />
+        <item itemvalue="Gradle.ContactModificationTest" />
+        <item itemvalue="Gradle.ContactCreationTest" />
+        <item itemvalue="Gradle.ContactModificationTest.testContactModification" />
+        <item itemvalue="Gradle.ContactDeletionTest" />
+        <item itemvalue="Gradle.ContactPhoneTest" />
       </list>
     </recent_temporary>
   </component>
@@ -266,7 +266,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/appmanager/ApplicationManager.java</url>
-          <line>32</line>
+          <line>34</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -281,7 +281,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/appmanager/ApplicationManager.java</url>
-          <line>29</line>
+          <line>30</line>
           <properties class="ru.stq.java.addressbook.appmanager.ApplicationManager" method="init">
             <option name="EMULATED" value="true" />
           </properties>
