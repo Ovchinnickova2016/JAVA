@@ -187,19 +187,19 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ContactPhoneTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GroupModificationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.ContactPhoneTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.GroupModificationTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":cleanTestContacts" />
-            <option value=":testContacts" />
+            <option value=":cleanTestGroups" />
+            <option value=":testGroups" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -212,16 +212,16 @@
       <item itemvalue="Gradle.ContactCreationTest" />
       <item itemvalue="Gradle.ContactDeletionTest" />
       <item itemvalue="Gradle.ContactModificationTest" />
-      <item itemvalue="Gradle.ContactPhoneTest" />
       <item itemvalue="Gradle.ContactModificationTest.testContactModification" />
+      <item itemvalue="Gradle.GroupModificationTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.ContactModificationTest" />
-        <item itemvalue="Gradle.ContactModificationTest.testContactModification" />
         <item itemvalue="Gradle.ContactCreationTest" />
         <item itemvalue="Gradle.ContactDeletionTest" />
-        <item itemvalue="Gradle.ContactPhoneTest" />
+        <item itemvalue="Gradle.GroupModificationTest" />
+        <item itemvalue="Gradle.ContactModificationTest.testContactModification" />
       </list>
     </recent_temporary>
   </component>

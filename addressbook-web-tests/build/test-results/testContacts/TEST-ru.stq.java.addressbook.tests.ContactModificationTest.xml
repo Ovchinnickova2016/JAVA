@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.stq.java.addressbook.tests.ContactModificationTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-10-21T08:05:59" hostname="DESKTOP-OPO1NB3" time="3.317">
+<testsuite name="ru.stq.java.addressbook.tests.ContactModificationTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2019-10-21T08:22:20" hostname="DESKTOP-OPO1NB3" time="3.606">
   <properties/>
-  <testcase name="testContactModification" classname="ru.stq.java.addressbook.tests.ContactModificationTest" time="3.317">
-    <failure message="java.lang.AssertionError: &#13;&#10;Expected: &lt;[ContactsData{id=267, firstName='ana', lastName='Ovickova'}]&gt;&#13;&#10;     but: was &lt;[ContactsData{id=267, firstName='ana', lastName='Ovickova'}]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
-Expected: &lt;[ContactsData{id=267, firstName='ana', lastName='Ovickova'}]&gt;
-     but: was &lt;[ContactsData{id=267, firstName='ana', lastName='Ovickova'}]&gt;
+  <testcase name="testContactModification" classname="ru.stq.java.addressbook.tests.ContactModificationTest" time="3.606">
+    <failure message="java.lang.AssertionError: &#13;&#10;Expected: &lt;[ContactsData{id=268, firstName='ana', lastName='Ovickova'}, ContactsData{id=270, firstName='Anastasia 2', lastName='Galimzyanova 2'}, ContactsData{id=271, firstName='Anastasia 3', lastName='Galimzyanova 3'}, ContactsData{id=269, firstName='Anastasia 1', lastName='Galimzyanova 1'}, ContactsData{id=272, firstName='Anastasia 4', lastName='Galimzyanova 4'}]&gt;&#13;&#10;     but: was &lt;[ContactsData{id=268, firstName='ana', lastName='Ovickova'}, ContactsData{id=270, firstName='Anastasia 2', lastName='Galimzyanova 2'}, ContactsData{id=271, firstName='Anastasia 3', lastName='Galimzyanova 3'}, ContactsData{id=269, firstName='Anastasia 1', lastName='Galimzyanova 1'}, ContactsData{id=272, firstName='Anastasia 4', lastName='Galimzyanova 4'}]&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: &lt;[ContactsData{id=268, firstName='ana', lastName='Ovickova'}, ContactsData{id=270, firstName='Anastasia 2', lastName='Galimzyanova 2'}, ContactsData{id=271, firstName='Anastasia 3', lastName='Galimzyanova 3'}, ContactsData{id=269, firstName='Anastasia 1', lastName='Galimzyanova 1'}, ContactsData{id=272, firstName='Anastasia 4', lastName='Galimzyanova 4'}]&gt;
+     but: was &lt;[ContactsData{id=268, firstName='ana', lastName='Ovickova'}, ContactsData{id=270, firstName='Anastasia 2', lastName='Galimzyanova 2'}, ContactsData{id=271, firstName='Anastasia 3', lastName='Galimzyanova 3'}, ContactsData{id=269, firstName='Anastasia 1', lastName='Galimzyanova 1'}, ContactsData{id=272, firstName='Anastasia 4', lastName='Galimzyanova 4'}]&gt;
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
 	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
 	at ru.stq.java.addressbook.tests.ContactModificationTest.testContactModification(ContactModificationTest.java:30)
@@ -63,11 +63,11 @@ Expected: &lt;[ContactsData{id=267, firstName='ana', lastName='Ovickova'}]&gt;
 	at java.base/java.lang.Thread.run(Thread.java:835)
 </failure>
   </testcase>
-  <system-out><![CDATA[13:05:59.636 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Start test testContactModification with parameters []
+  <system-out><![CDATA[13:22:20.216 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Start test testContactModification with parameters []
 Hibernate: select contactsda0_.id as id1_0_, contactsda0_.email as email2_0_, contactsda0_.email2 as email3_0_, contactsda0_.email3 as email4_0_, contactsda0_.firstname as firstnam5_0_, contactsda0_.home as home6_0_, contactsda0_.lastname as lastname7_0_, contactsda0_.mobile as mobile8_0_, contactsda0_.photo as photo9_0_, contactsda0_.work as work10_0_ from addressbook contactsda0_ where deprecated='0000-00-00 00:00:00'
 Hibernate: select contactsda0_.id as id1_0_, contactsda0_.email as email2_0_, contactsda0_.email2 as email3_0_, contactsda0_.email3 as email4_0_, contactsda0_.firstname as firstnam5_0_, contactsda0_.home as home6_0_, contactsda0_.lastname as lastname7_0_, contactsda0_.mobile as mobile8_0_, contactsda0_.photo as photo9_0_, contactsda0_.work as work10_0_ from addressbook contactsda0_ where deprecated='0000-00-00 00:00:00'
 Hibernate: select contactsda0_.id as id1_0_, contactsda0_.email as email2_0_, contactsda0_.email2 as email3_0_, contactsda0_.email3 as email4_0_, contactsda0_.firstname as firstnam5_0_, contactsda0_.home as home6_0_, contactsda0_.lastname as lastname7_0_, contactsda0_.mobile as mobile8_0_, contactsda0_.photo as photo9_0_, contactsda0_.work as work10_0_ from addressbook contactsda0_ where deprecated='0000-00-00 00:00:00'
-13:06:03.144 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Stop test testContactModification
+13:22:24.025 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Stop test testContactModification
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

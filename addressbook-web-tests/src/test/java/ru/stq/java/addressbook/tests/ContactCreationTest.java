@@ -77,6 +77,7 @@ public class ContactCreationTest extends TestBase {
     assertThat(app.contact().count(),equalTo(before.size()));
     Contacts after = app.db().contacts();
     assertThat(after, equalTo(before));
+    verifyContactListInUI();
   }
   @Test(enabled = false)
   public void testCurrentDir(){
@@ -85,5 +86,6 @@ public class ContactCreationTest extends TestBase {
     File photo = new File("src/test/resources/icon.png");
     System.out.println(photo.getAbsolutePath());
     System.out.println(photo.exists());
+    verifyContactListInUI();
   }
 }
