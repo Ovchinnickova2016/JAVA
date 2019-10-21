@@ -3,13 +3,13 @@ package ru.stq.java.addressbook.model;
 import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
+import org.hibernate.annotations.ManyToAny;
 import org.hibernate.annotations.Type;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Objects;
+import java.util.Set;
 
 @XStreamAlias("group")
 @Entity
@@ -48,6 +48,12 @@ public class GroupData {
   @Column(name = "group_footer")
   @Type(type = "text")
   private String footer;
+  @ManyToMany(mappedBy = "groups")
+  private Set<ContactsData> contacts = new HashSet<ContactsData>();
+
+  public Contacts getContacts() {
+    return new Contacts(contacts);
+  }
 
   public GroupData withId(int id) {
     this.id = id;

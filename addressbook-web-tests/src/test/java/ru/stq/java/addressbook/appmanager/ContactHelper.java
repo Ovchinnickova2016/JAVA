@@ -7,7 +7,9 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stq.java.addressbook.model.Contacts;
 import ru.stq.java.addressbook.model.ContactsData;
+import ru.stq.java.addressbook.model.Groups;
 
+import javax.swing.*;
 import java.util.List;
 
 public class ContactHelper extends HelperBase{
@@ -32,7 +34,10 @@ public class ContactHelper extends HelperBase{
     type(By.name("address"), contactsData.getAddress());
    // attach(By.name("photo"), contactsData.getPhoto());
     if (creation){
-     // new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactsData.getGroup());
+      if (contactsData.getGroups().size()>0) {
+        Assert.assertTrue(contactsData.getGroups().size()==1);
+        new Select(wd.findElement(By.name("new_group"))).selectByVisibleText(contactsData.getGroups().iterator().next().getName());
+      }
     }
     else{
       Assert.assertFalse(isElementPresent(By.name("new_group")));
@@ -101,6 +106,7 @@ public class ContactHelper extends HelperBase{
     }
     contactCache = new Contacts();
     List<WebElement> elements = wd.findElements(By.name("entry"));
+
     for (WebElement element : elements){
       int id = Integer.parseInt(String.valueOf(element.findElement(By.tagName("input")).getAttribute("value")));
       List<WebElement> list = element.findElements(By.tagName("td"));
@@ -110,7 +116,7 @@ public class ContactHelper extends HelperBase{
       String allemails = list.get(4).getText();
       String allphones = list.get(5).getText();
       contactCache.add(new ContactsData().withId(id).
-        withFirstName(name).withLastName(lastname).withAllPhones(allphones).withAllEmailes(allemails).withAddress(address).withGroup("group3"));
+        withFirstName(name).withLastName(lastname).withAllPhones(allphones).withAllEmailes(allemails).withAddress(address));
     }
     return new Contacts(contactCache);
   }
@@ -145,5 +151,32 @@ public class ContactHelper extends HelperBase{
       .withHomePhone(home).withMobilePhone(mobile).withWorkPhone(work).withEmail(email).withEmail2(email2).withEmail3(email3).withAddress(address);
   }
 
+  public void addContactToGroup(ContactsData contact) {
+    selectContactById(contact.getId());
+    addContactById();
+  }
 
+  private void addContactById() {
+    click(By.name("add"));
+  }
+
+  public void deleteContactFromGroup(ContactsData deletedContact, String id) {
+    selectGroupByName(id);
+    selectContactById(deletedContact.getId());
+    deleteContactById();
+  }
+
+  private void selectGroupByName(String id) {
+    click(By.name("group"));
+    click(By.xpath("//form[@id='right']/select/option"));
+    selectGroupById(id);
+  }
+
+  private void selectGroupById(String id) {
+    click(By.id(id));
+  }
+
+  private void deleteContactById() {
+    click(By.name("remove"));
+  }
 }

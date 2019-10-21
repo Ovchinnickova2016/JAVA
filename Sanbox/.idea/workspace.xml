@@ -62,6 +62,10 @@
   <component name="ProjectId" id="1QUw0RVC6QZmkf3smKg7UnwcJ0t" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="sanbox" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../addressbook-web-tests" />
@@ -91,7 +95,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ContactModificationTest">
+  <component name="RunManager" selected="Gradle.ContactAddToGroupTest.testContactAddToGroup">
     <configuration name="GroupDataGenerator" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stq.java.addressbook.generators.GroupDataGenerator" />
       <module name="addressbook-web-tests.test" />
@@ -107,12 +111,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactCreationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ContactAddToGroupTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.ContactCreationTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.ContactAddToGroupTest&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":cleanTest" />
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="ContactAddToGroupTest.testContactAddToGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.ContactAddToGroupTest.testContactAddToGroup&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -147,52 +171,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ContactModificationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="GroupCreationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.ContactModificationTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTestContacts" />
-            <option value=":testContacts" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ContactModificationTest.testContactModification" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.ContactModificationTest.testContactModification&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTestContacts" />
-            <option value=":testContacts" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="GroupModificationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.GroupModificationTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.GroupCreationTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -207,21 +191,31 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="F:/НАСТЯ/JAVA/JAVA/addressbook-web-tests/src/test/resources/testng-contacts.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/../addressbook-web-tests/src/test/resources/testng-contacts.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.GroupDataGenerator" />
-      <item itemvalue="Gradle.ContactCreationTest" />
       <item itemvalue="Gradle.ContactDeletionTest" />
-      <item itemvalue="Gradle.ContactModificationTest" />
-      <item itemvalue="Gradle.ContactModificationTest.testContactModification" />
-      <item itemvalue="Gradle.GroupModificationTest" />
+      <item itemvalue="Gradle.ContactAddToGroupTest.testContactAddToGroup" />
+      <item itemvalue="Gradle.ContactAddToGroupTest" />
+      <item itemvalue="Gradle.GroupCreationTest" />
+      <item itemvalue="TestNG.F:/НАСТЯ/JAVA/JAVA/addressbook-web-tests/src/test/resources/testng-contacts.xml" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ContactModificationTest" />
-        <item itemvalue="Gradle.ContactCreationTest" />
-        <item itemvalue="Gradle.ContactDeletionTest" />
-        <item itemvalue="Gradle.GroupModificationTest" />
-        <item itemvalue="Gradle.ContactModificationTest.testContactModification" />
+        <item itemvalue="Gradle.ContactAddToGroupTest.testContactAddToGroup" />
+        <item itemvalue="Gradle.ContactAddToGroupTest" />
+        <item itemvalue="Gradle.GroupCreationTest" />
+        <item itemvalue="Gradle.ContactAddToGroupTest.testContactAddToGroup" />
+        <item itemvalue="Gradle.ContactAddToGroupTest" />
       </list>
     </recent_temporary>
   </component>
@@ -255,23 +249,13 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/appmanager/ContactHelper.java</url>
-          <line>111</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/appmanager/ContactHelper.java</url>
-          <line>112</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/appmanager/ApplicationManager.java</url>
           <line>34</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/tests/ContactCreationTest.java</url>
-          <line>44</line>
+          <line>48</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

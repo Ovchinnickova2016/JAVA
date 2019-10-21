@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ru.stq.java.addressbook.tests.GroupCreationTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2019-10-21T10:53:23" hostname="DESKTOP-OPO1NB3" time="7.974">
+  <properties/>
+  <testcase name="testGroupCreation[0](GroupData{id='2147483647', name='test 0'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="1.913"/>
+  <testcase name="testGroupCreation[1](GroupData{id='2147483647', name='test 1'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="1.524"/>
+  <testcase name="testGroupCreation[2](GroupData{id='2147483647', name='test 2'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="1.486"/>
+  <testcase name="testGroupCreation[3](GroupData{id='2147483647', name='test 3'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="1.502"/>
+  <testcase name="testGroupCreation[4](GroupData{id='2147483647', name='test 4'})" classname="ru.stq.java.addressbook.tests.GroupCreationTest" time="1.549"/>
+  <system-out><![CDATA[15:53:23.514 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 0'}]
+Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+15:53:25.427 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Stop test testGroupCreation
+15:53:25.427 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 1'}]
+Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+15:53:26.951 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Stop test testGroupCreation
+15:53:26.951 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 2'}]
+Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+15:53:28.437 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Stop test testGroupCreation
+15:53:28.437 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 3'}]
+Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+15:53:29.939 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Stop test testGroupCreation
+15:53:29.939 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 4'}]
+Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+Hibernate: select groupdata0_.group_id as group_id1_2_, groupdata0_.group_footer as group_fo2_2_, groupdata0_.group_header as group_he3_2_, groupdata0_.group_name as group_na4_2_ from group_list groupdata0_
+15:53:31.488 [Test worker] INFO  r.s.java.addressbook.tests.TestBase - Stop test testGroupCreation
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

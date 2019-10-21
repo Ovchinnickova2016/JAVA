@@ -7,7 +7,9 @@ import org.testng.annotations.*;
 import ru.stq.java.addressbook.model.Contacts;
 import ru.stq.java.addressbook.model.ContactsData;
 import ru.stq.java.addressbook.model.GroupData;
+import ru.stq.java.addressbook.model.Groups;
 
+import javax.swing.*;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -20,6 +22,8 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 public class ContactCreationTest extends TestBase {
   private final Properties properties = new Properties();;
+  Groups groups = app.db().groups();
+
   @DataProvider
   public Iterator<Object[]> validGroupsFromXML() throws IOException {
     String target = System.getProperty("target","local");
@@ -57,7 +61,16 @@ public class ContactCreationTest extends TestBase {
       return contacts.stream().map((g) -> new Object[]{g}).collect(Collectors.toList()).iterator();
     }
   }
+  @BeforeMethod
+  public void ensurePreconditions() {
+    //check if there are any groups
+    if (groups.size()==0){
+      app.goTo().groupPage();
+      GroupData group = new GroupData().withName("group3'");
+      app.group().create(group);
+    }
 
+  }
   @Test(dataProvider = "validGroupsFromJSON")
   public void testContactCreation(ContactsData contact) throws Exception {
     Contacts before = app.db().contacts();
@@ -72,7 +85,9 @@ public class ContactCreationTest extends TestBase {
   public void testBadContactCreation() throws Exception {
     app.contact().goToContactsPage();
     Contacts before = app.db().contacts();
-    ContactsData contact = new ContactsData().withEmail("ovchinnickova.anast@gmail.com'").withEmail2("ovch@gmail.com").withEmail3("galim@gmail.com").withFirstName("nastya").withLastName("Ovchinnickova").withMobilePhone("44423422").withWorkPhone("231").withHomePhone("3232").withAddress("2 dd 3").withGroup("group3");
+    ContactsData contact = new ContactsData().withEmail("ovchinnickova.anast@gmail.com'").withEmail2("ovch@gmail.com").withEmail3("galim@gmail.com")
+      .withFirstName("nastya").withLastName("Ovchinnickova").withMobilePhone("44423422").withWorkPhone("231").withHomePhone("3232")
+      .withAddress("2 dd 3").inGroup(groups.iterator().next());
     app.contact().create(contact);
     assertThat(app.contact().count(),equalTo(before.size()));
     Contacts after = app.db().contacts();
@@ -88,4 +103,5 @@ public class ContactCreationTest extends TestBase {
     System.out.println(photo.exists());
     verifyContactListInUI();
   }
+
 }

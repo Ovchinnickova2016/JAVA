@@ -7,6 +7,8 @@
             <class name="ru.stq.java.addressbook.tests.ContactModificationTest" />
             <class name="ru.stq.java.addressbook.tests.ContactDeletionTest" />
             <class name="ru.stq.java.addressbook.tests.ContactPhoneTest" />
+            <class name="ru.stq.java.addressbook.tests.ContactAddToGroupTest" />
+            <class name="ru.stq.java.addressbook.tests.ContactDeleteFromGroupTest" />
         </classes>
     </test>
 </suite>
