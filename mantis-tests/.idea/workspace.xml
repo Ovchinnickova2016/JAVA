@@ -28,6 +28,7 @@
   <component name="PropertiesComponent">
     <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -125,12 +126,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/RegistrationHelper.java</url>
-          <line>13</line>
+          <line>15</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/RegistrationHelper.java</url>
-          <line>17</line>
+          <line>25</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
