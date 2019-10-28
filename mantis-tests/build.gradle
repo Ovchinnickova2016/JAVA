@@ -26,3 +26,6 @@ test {
         systemProperty 'verifyUI', "${verifyUI}"
     }
 }
+test{
+    useTestNG()
+}
