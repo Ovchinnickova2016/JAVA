@@ -24,5 +24,6 @@ public class ContactAddToGroupTest extends TestBase {
       ContactsData addedContact = before.iterator().next();
       app.contact().goToContactsPage();
       app.contact().addContactToGroup(addedContact);
+      app.contact().goToGroupPage();
     }
 }

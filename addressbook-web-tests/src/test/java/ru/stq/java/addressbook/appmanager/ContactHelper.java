@@ -160,23 +160,27 @@ public class ContactHelper extends HelperBase{
     click(By.name("add"));
   }
 
-  public void deleteContactFromGroup(ContactsData deletedContact, String id) {
+  public void deleteContactFromGroup(ContactsData deletedContact, int id) {
     selectGroupByName(id);
     selectContactById(deletedContact.getId());
     deleteContactById();
   }
 
-  private void selectGroupByName(String id) {
+  private void selectGroupByName(int id) {
     click(By.name("group"));
     click(By.xpath("//form[@id='right']/select/option"));
     selectGroupById(id);
   }
 
-  private void selectGroupById(String id) {
-    click(By.id(id));
+  private void selectGroupById(int id) {
+    click(By.id(String.valueOf(id)));
   }
 
   private void deleteContactById() {
     click(By.name("remove"));
+  }
+
+  public void goToGroupPage() {
+    click(By.linkText("group page 'group1'"));
   }
 }

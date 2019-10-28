@@ -7,6 +7,9 @@ import ru.stq.java.addressbook.model.ContactsData;
 import ru.stq.java.addressbook.model.GroupData;
 import ru.stq.java.addressbook.model.Groups;
 
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
+
 public class ContactDeleteFromGroupTest extends TestBase {
   Groups groups = app.db().groups();
   @BeforeMethod
@@ -23,6 +26,9 @@ public class ContactDeleteFromGroupTest extends TestBase {
     Contacts before = app.db().contacts();
     ContactsData deletedContact = before.iterator().next();
     app.contact().goToContactsPage();
-    app.contact().deleteContactFromGroup(deletedContact, deletedContact.getId().toString());
+    app.contact().deleteContactFromGroup(deletedContact, deletedContact.getId());
+    app.contact().goToGroupPage();
+
+    //assertThat(after, equalTo(before.without(deletedGroup)));
   }
 }

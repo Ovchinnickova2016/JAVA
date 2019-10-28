@@ -15,6 +15,9 @@
     <projectState path="$PROJECT_DIR$/../addressbook-web-tests">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/../mantis-tests">
+      <ProjectState />
+    </projectState>
   </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
@@ -68,11 +71,11 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="sanbox" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../addressbook-web-tests" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mantis-tests/build.gradle" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15136719" />
+    <property name="project.structure.proportion" value="0.15527344" />
     <property name="project.structure.side.proportion" value="0.59770113" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -95,7 +98,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ContactAddToGroupTest.testContactAddToGroup">
+  <component name="RunManager" selected="Gradle.ContactDeletionTest">
     <configuration name="GroupDataGenerator" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stq.java.addressbook.generators.GroupDataGenerator" />
       <module name="addressbook-web-tests.test" />
@@ -111,32 +114,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactAddToGroupTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ContactDeleteFromGroupTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.ContactAddToGroupTest&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":cleanTest" />
-            <option value=":test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ContactAddToGroupTest.testContactAddToGroup" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.ContactAddToGroupTest.testContactAddToGroup&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.ContactDeleteFromGroupTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -171,19 +154,19 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="GroupCreationTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ContactPhoneTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$/../addressbook-web-tests" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.GroupCreationTest&quot;" />
+        <option name="scriptParameters" value="--tests &quot;ru.stq.java.addressbook.tests.ContactPhoneTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value=":cleanTestGroups" />
-            <option value=":testGroups" />
+            <option value=":cleanTestContacts" />
+            <option value=":testContacts" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -191,10 +174,34 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="F:/НАСТЯ/JAVA/JAVA/addressbook-web-tests/src/test/resources/testng-contacts.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactAddToGroupTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/../addressbook-web-tests/src/test/resources/testng-contacts.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stq.java.addressbook.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stq.java.addressbook.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stq.java.addressbook.tests.ContactAddToGroupTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactCreationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stq.java.addressbook.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stq.java.addressbook.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stq.java.addressbook.tests.ContactCreationTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -203,19 +210,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.GroupDataGenerator" />
+      <item itemvalue="Gradle.ContactDeleteFromGroupTest" />
+      <item itemvalue="TestNG.ContactAddToGroupTest" />
+      <item itemvalue="TestNG.ContactCreationTest" />
+      <item itemvalue="Gradle.ContactPhoneTest" />
       <item itemvalue="Gradle.ContactDeletionTest" />
-      <item itemvalue="Gradle.ContactAddToGroupTest.testContactAddToGroup" />
-      <item itemvalue="Gradle.ContactAddToGroupTest" />
-      <item itemvalue="Gradle.GroupCreationTest" />
-      <item itemvalue="TestNG.F:/НАСТЯ/JAVA/JAVA/addressbook-web-tests/src/test/resources/testng-contacts.xml" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ContactAddToGroupTest.testContactAddToGroup" />
-        <item itemvalue="Gradle.ContactAddToGroupTest" />
-        <item itemvalue="Gradle.GroupCreationTest" />
-        <item itemvalue="Gradle.ContactAddToGroupTest.testContactAddToGroup" />
-        <item itemvalue="Gradle.ContactAddToGroupTest" />
+        <item itemvalue="Gradle.ContactDeletionTest" />
+        <item itemvalue="Gradle.ContactPhoneTest" />
+        <item itemvalue="TestNG.ContactCreationTest" />
+        <item itemvalue="TestNG.ContactAddToGroupTest" />
+        <item itemvalue="Gradle.ContactDeleteFromGroupTest" />
       </list>
     </recent_temporary>
   </component>
