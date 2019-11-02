@@ -16,13 +16,8 @@ public class RegistrationHelper extends HelperBase {
     wd.get(app.getProperty("web.baseUrl") + "/signup_page.php");
    type(By.name("username"), username);
     type(By.name("email"), email);
-    String s = "ааааамма";
-    String source = "input[value='Зарегистрироваться']";//..getBytes("utf-8").toString();
-    byte bytes[] = source.getBytes("windows-1251");
-    String source2 = new String(source.getBytes("windows-1251"), "windows-1251");
-    System.out.println(s + "   "+source + "         "  + source2);
-    //click(By.cssSelector("input[value='Зарегистрироваться']"));
-    click(By.cssSelector(source2));
+    click(By.cssSelector("input[type='submit']"));
+
   }
 
   public void finish(String confirmationLink, String password) {
