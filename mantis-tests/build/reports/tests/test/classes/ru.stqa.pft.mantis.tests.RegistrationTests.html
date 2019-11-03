@@ -23,13 +23,13 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">2</div>
+<div class="counter">1</div>
 <p>tests</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">2</div>
+<div class="counter">1</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">16.310s</div>
+<div class="counter">5.998s</div>
 <p>duration</p>
 </div>
 </td>
@@ -76,89 +76,39 @@
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
 <div class="test">
-<a name="tearDown"></a>
-<h3 class="failures">tearDown</h3>
+<a name="testRegistration"></a>
+<h3 class="failures">testRegistration</h3>
 <span class="code">
-<pre>org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+<pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: *[name='username']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '4.0.0-alpha-2', revision: 'f148142cf8', time: '2019-07-01T20:55:26'
-System info: host: 'DESKTOP-OPO1NB3', ip: '192.168.83.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '12.0.2'
+System info: host: 'DESKTOP-OPO1NB3', ip: '192.168.83.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.25.0, moz:headless: false, moz:processID: 1844, moz:profile: C:\Users\alexo\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 7adaa6f3-0c47-49e7-b056-b038d72637a6
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.25.0, moz:headless: false, moz:processID: 7044, moz:profile: C:\Users\alexo\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 09a90e30-4d3f-4acf-8927-b739335a594f
+*** Element info: {Using=name, value=username}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:191)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:125)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:161)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:576)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:633)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:473)
-	at ru.stqa.pft.mantis.appmanager.ApplicationManager.stop(ApplicationManager.java:37)
-	at ru.stqa.pft.mantis.tests.TestBase.tearDown(TestBase.java:26)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:369)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
-	at org.testng.TestNG.runSuites(TestNG.java:1032)
-	at org.testng.TestNG.run(TestNG.java:1000)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
-	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.base/java.lang.Thread.run(Thread.java:835)
-</pre>
-</span>
-</div>
-<div class="test">
-<a name="testRegistration"></a>
-<h3 class="failures">testRegistration</h3>
-<span class="code">
-<pre>java.lang.Error: No mail
-	at ru.stqa.pft.mantis.appmanager.MailHelper.waitForMail(MailHelper.java:37)
-	at ru.stqa.pft.mantis.tests.RegistrationTests.testRegistration(RegistrationTests.java:30)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:415)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at ru.stqa.pft.mantis.appmanager.HelperBase.click(HelperBase.java:20)
+	at ru.stqa.pft.mantis.appmanager.HelperBase.type(HelperBase.java:24)
+	at ru.stqa.pft.mantis.appmanager.RegistrationHelper.start(RegistrationHelper.java:17)
+	at ru.stqa.pft.mantis.tests.RegistrationTests.testRegistration(RegistrationTests.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
 	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
@@ -167,7 +117,7 @@ Session ID: 7adaa6f3-0c47-49e7-b056-b038d72637a6
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
 	at org.testng.TestRunner.privateRun(TestRunner.java:770)
 	at org.testng.TestRunner.run(TestRunner.java:591)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
@@ -183,20 +133,20 @@ Session ID: 7adaa6f3-0c47-49e7-b056-b038d72637a6
 	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:141)
 	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:90)
 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
 	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
 	at com.sun.proxy.$Proxy2.stop(Unknown Source)
 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:132)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
 	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
@@ -204,10 +154,10 @@ Session ID: 7adaa6f3-0c47-49e7-b056-b038d72637a6
 	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:412)
 	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
 	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.base/java.lang.Thread.run(Thread.java:835)
+	at java.lang.Thread.run(Thread.java:748)
 </pre>
 </span>
 </div>
@@ -223,13 +173,8 @@ Session ID: 7adaa6f3-0c47-49e7-b056-b038d72637a6
 </tr>
 </thead>
 <tr>
-<td class="failures">tearDown</td>
-<td class="failures">0.178s</td>
-<td class="failures">failed</td>
-</tr>
-<tr>
 <td class="failures">testRegistration</td>
-<td class="failures">16.132s</td>
+<td class="failures">5.998s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -237,34 +182,31 @@ Session ID: 7adaa6f3-0c47-49e7-b056-b038d72637a6
 <div id="tab2" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>20:56:35.269 [Test worker] DEBUG o.s.smtp.server.CommandHandler - Added command: AUTH
-20:56:35.274 [Test worker] DEBUG o.s.smtp.server.CommandHandler - Added command: DATA
-20:56:35.274 [Test worker] DEBUG o.s.smtp.server.CommandHandler - Added command: EHLO
-20:56:35.274 [Test worker] DEBUG o.s.smtp.server.CommandHandler - Added command: HELO
-20:56:35.274 [Test worker] DEBUG o.s.smtp.server.CommandHandler - Added command: HELP
-20:56:35.274 [Test worker] DEBUG o.s.smtp.server.CommandHandler - Added command: MAIL
-20:56:35.274 [Test worker] DEBUG o.s.smtp.server.CommandHandler - Added command: NOOP
-20:56:35.274 [Test worker] DEBUG o.s.smtp.server.CommandHandler - Added command: QUIT
-20:56:35.274 [Test worker] DEBUG o.s.smtp.server.CommandHandler - Added command: RCPT
-20:56:35.274 [Test worker] DEBUG o.s.smtp.server.CommandHandler - Added command: RSET
-20:56:35.274 [Test worker] DEBUG o.s.smtp.server.CommandHandler - Added command: STARTTLS
-20:56:35.274 [Test worker] DEBUG o.s.smtp.server.CommandHandler - Added command: VRFY
-20:56:35.274 [Test worker] INFO  o.subethamail.smtp.server.SMTPServer - SMTP server *:25 starting
-20:56:35.284 [org.subethamail.smtp.server.ServerThread *:25] INFO  o.s.smtp.server.ServerThread - SMTP server *:25 started
-20:56:51.412 [Test worker] INFO  o.subethamail.smtp.server.SMTPServer - SMTP server *:25 stopping
-20:56:51.413 [Test worker] DEBUG o.s.smtp.server.ServerThread - SMTP Server socket shut down
-20:56:51.413 [org.subethamail.smtp.server.ServerThread *:25] INFO  o.s.smtp.server.ServerThread - SMTP server *:25 stopped
+<pre>JAMES Remote Administration Tool 2.3.1
+Please enter your login and password
+Login id:
+
+Password:
+
+Login failed for 
+Login id:root
+
+Password:root
+
+Welcome root. HELP for a list of commandsadduser user1572784359826 1234
+
+User user1572784359826 addedquit
 </pre>
 </span>
 </div>
 <div id="tab3" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>1572710196271	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe&quot; &quot;-marionette&quot; &quot;-foreground&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\alexo\\AppData\\Local\\Temp\\rust_mozprofile1nVXe6&quot;
-1572710196720	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
-1572710196720	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
-1572710196721	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
-1572710196721	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+<pre>1572784360939	mozrunner::runner	INFO	Running command: &quot;C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe&quot; &quot;-marionette&quot; &quot;-foreground&quot; &quot;-no-remote&quot; &quot;-profile&quot; &quot;C:\\Users\\alexo\\AppData\\Local\\Temp\\rust_mozprofilexyuzrT&quot;
+1572784361382	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1572784361382	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1572784361382	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1572784361382	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
 JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
 WARN: compileToBinary(259): 
 C:\fakepath(337,18-133): warning X3571: pow(f, e) will not work for negative f, use abs(f) or conditionally handle negative values if you expect them
@@ -291,23 +233,10 @@ C:\fakepath(174,1-6): warning X4000: use of potentially uninitialized variable (
 C:\fakepath(225,1): warning X4000: use of potentially uninitialized variable (f_distance_aa)
 C:\fakepath(262,1): warning X4000: use of potentially uninitialized variable (f_do_clip)
 
-[Child 9528, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1572402546/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-1572710199284	Marionette	INFO	Listening on port 57290
-1572710199401	Marionette	WARN	TLS certificate errors will be ignored for this session
-нояб. 02, 2019 8:56:39 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+1572784364101	Marionette	INFO	Listening on port 53896
+1572784364559	Marionette	WARN	TLS certificate errors will be ignored for this session
+ноя 03, 2019 5:32:44 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-JavaScript error: http://localhost/mantisbt-2.22.1/mantisbt-2.22.1/js/common.js, line 60: ReferenceError: List is not defined
-[Parent 1844, Gecko_IOThread] WARNING: pipe error: 109: file z:/task_1572402546/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[Child 2732, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1572402546/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[Child 16244, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1572402546/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-[Child 16244, Chrome_ChildThread] WARNING: pipe error: 109: file z:/task_1572402546/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 341
-1572710209183	Marionette	INFO	Stopped listening on port 57290
-
-###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
-
-###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
-
 </pre>
 </span>
 </div>
@@ -319,7 +248,7 @@ JavaScript error: http://localhost/mantisbt-2.22.1/mantisbt-2.22.1/js/common.js,
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 5.6.2</a> at 2 нояб. 2019 г., 20:56:51</p>
+<a href="http://www.gradle.org">Gradle 5.6.2</a> at 03.11.2019 17:32:46</p>
 </div>
 </div>
 </body>

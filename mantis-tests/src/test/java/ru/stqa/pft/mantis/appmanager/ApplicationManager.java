@@ -5,7 +5,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
-import org.openqa.selenium.remote.HttpSessionId;
 
 import java.io.File;
 import java.io.FileReader;
@@ -21,6 +20,9 @@ public class ApplicationManager {
   private RegistrationHelper registrationHelper;
   private FtpHelper ftp;
   private MailHelper mailHelper;
+  private JamesHelper jamesHelper;
+  private LoginHelper loginHelper;
+  private LoginAdminHelper loginAdminHelper;
 
   public ApplicationManager(String browser) {
     this.browser = browser;
@@ -84,5 +86,26 @@ public class ApplicationManager {
 
     }
     return mailHelper;
+  }
+
+  public JamesHelper james(){
+    if (jamesHelper == null){
+      jamesHelper = new JamesHelper(this);
+    }
+    return jamesHelper;
+  }
+
+  public LoginHelper login() {
+    if (loginHelper == null) {
+      loginHelper = new LoginHelper(this);
+    }
+    return loginHelper;
+  }
+
+  public LoginAdminHelper loginAdmin() {
+    if (loginAdminHelper == null) {
+      loginAdminHelper = new LoginAdminHelper(this);
+    }
+    return loginAdminHelper;
   }
 }
