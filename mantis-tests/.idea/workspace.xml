@@ -57,7 +57,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.RegistrationTests.testRegistration">
+  <component name="RunManager" selected="Gradle.RegistrationTests">
     <configuration name="ChagePassTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -140,8 +140,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.RegistrationTests.testRegistration" />
         <item itemvalue="Gradle.RegistrationTests" />
+        <item itemvalue="Gradle.RegistrationTests.testRegistration" />
         <item itemvalue="Gradle.ChagePassTests" />
         <item itemvalue="Gradle.LoginTests" />
       </list>
@@ -180,11 +180,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/HttpSession.java</url>
           <line>29</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/ApplicationManager.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/tests/LoginTests.java</url>
@@ -263,11 +258,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/FtpHelper.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="26" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/FtpHelper.java</url>
           <line>28</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
@@ -288,51 +278,6 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/JamesHelper.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="115" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/JamesHelper.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="116" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/JamesHelper.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="117" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/tests/RegistrationTests.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="118" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/tests/RegistrationTests.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="119" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/tests/RegistrationTests.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="120" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/tests/RegistrationTests.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="121" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/JamesHelper.java</url>
-          <line>144</line>
-          <option name="timeStamp" value="122" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/JamesHelper.java</url>
-          <line>145</line>
-          <option name="timeStamp" value="123" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/JamesHelper.java</url>
           <line>160</line>
           <option name="timeStamp" value="124" />
         </line-breakpoint>
@@ -350,39 +295,24 @@
           <option name="timeStamp" value="126" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/JamesHelper.java</url>
-          <line>146</line>
-          <option name="timeStamp" value="127" />
+          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/RegistrationHelper.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="136" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/JamesHelper.java</url>
-          <line>147</line>
-          <option name="timeStamp" value="128" />
+          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/RegistrationHelper.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="137" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/JamesHelper.java</url>
-          <line>135</line>
-          <option name="timeStamp" value="131" />
+          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/RegistrationHelper.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="138" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/JamesHelper.java</url>
-          <line>136</line>
-          <option name="timeStamp" value="132" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/JamesHelper.java</url>
-          <line>137</line>
-          <option name="timeStamp" value="133" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/JamesHelper.java</url>
-          <line>138</line>
-          <option name="timeStamp" value="134" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/JamesHelper.java</url>
-          <line>139</line>
-          <option name="timeStamp" value="135" />
+          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/RegistrationHelper.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="139" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
