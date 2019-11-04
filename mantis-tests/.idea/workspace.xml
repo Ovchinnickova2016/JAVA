@@ -58,7 +58,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.SoapTests">
+  <component name="RunManager" selected="Gradle.RegistrationTests">
     <configuration name="ChagePassTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -161,9 +161,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SoapTests" />
-        <item itemvalue="Gradle.ChagePassTests" />
         <item itemvalue="Gradle.RegistrationTests" />
+        <item itemvalue="Gradle.ChagePassTests" />
+        <item itemvalue="Gradle.SoapTests" />
         <item itemvalue="Gradle.RegistrationTests.testRegistration" />
         <item itemvalue="Gradle.LoginTests" />
       </list>
@@ -205,17 +205,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/tests/LoginTests.java</url>
-          <line>13</line>
+          <line>15</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/tests/LoginTests.java</url>
-          <line>14</line>
+          <line>16</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/tests/LoginTests.java</url>
-          <line>15</line>
+          <line>17</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -335,6 +335,16 @@
           <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/LoginAdminHelper.java</url>
           <line>14</line>
           <option name="timeStamp" value="161" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/tests/RegistrationTests.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="162" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/tests/RegistrationTests.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="163" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
