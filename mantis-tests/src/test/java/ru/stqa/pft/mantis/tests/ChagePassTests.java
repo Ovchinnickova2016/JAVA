@@ -14,25 +14,23 @@ public class ChagePassTests extends TestBase {
   @Test
   public void testRegistration() throws IOException, MessagingException, InterruptedException {
     long now = System.currentTimeMillis();
-    String email = String.format("user%s@localhost.localdomain", now);
-    String user = String.format("user%s", now);
-    String password = "password";
+    String email = String.format("user1572806671268@localhost", now);
+    String user = "user1572806671268";
+    String password = "1234";
     String user1 = String.format("user%s", now);
     String password1 = "password";
     String admin = "administrator";
     String adminpass = "root";
-    //app.james().createUser(user, password);
-    //app.registration().start(user, email);
     app.loginAdmin().start(admin, adminpass);
-   // List<MailMessage> mailMessages  = app.james().waitForMail(user1, password1, 60000);
-//    String confirmationLink =  findConfirmationLink(mailMessages, email);
-
-   // app.registration().finish(confirmationLink,  password);
-    //assertTrue(app.newSession().login(user, password));
+    app.james().changePassword();
+    List<MailMessage> mailMessages = app.james().waitForMail(user, password, 60000);
+    String link = findLink(mailMessages, email);
+    app.registration().finish(link, user, password);
+    app.james().changePasswordFinish();
   }
 
-  private String findConfirmationLink(List<MailMessage> mailMessages, String email) {
-    MailMessage mailMessage =  mailMessages.stream().filter((m)->m.to.equals(email)).findFirst().get();
+  private String findLink(List<MailMessage> mailMessages, String email) {
+    MailMessage mailMessage =  mailMessages.stream().filter((m)->m.to.equals(email)).reduce((first, second) -> second).get();
     VerbalExpression regex = VerbalExpression.regex().find("http://").nonSpace().oneOrMore().build();
     return regex.getText(mailMessage.text);
   }

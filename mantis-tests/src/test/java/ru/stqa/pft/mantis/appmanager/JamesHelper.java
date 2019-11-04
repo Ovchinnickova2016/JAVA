@@ -53,6 +53,17 @@ public class JamesHelper {
     closeTelnetSession();
   }
 
+  public void changePassword(){
+    initTelnetSession();
+   // write("setpassword " + name + " 12345");
+   // String result = readUntil("Password for " + name + " reset");
+   // closeTelnetSession();
+  }
+
+  public void changePasswordFinish(){
+    closeTelnetSession();
+  }
+
   private void initTelnetSession() {
     mailserver = app.getProperty("mailserver.host");
     int port = Integer.parseInt(app.getProperty("mailserver.port"));

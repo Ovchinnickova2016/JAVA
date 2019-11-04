@@ -71,7 +71,7 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="sanbox" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mantis-tests/build.gradle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../soap-sample/build.gradle" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15527344" />
     <property name="project.structure.side.proportion" value="0.59770113" />
@@ -211,10 +211,10 @@
     <list>
       <item itemvalue="Application.GroupDataGenerator" />
       <item itemvalue="Gradle.ContactDeleteFromGroupTest" />
-      <item itemvalue="TestNG.ContactAddToGroupTest" />
-      <item itemvalue="TestNG.ContactCreationTest" />
       <item itemvalue="Gradle.ContactPhoneTest" />
       <item itemvalue="Gradle.ContactDeletionTest" />
+      <item itemvalue="TestNG.ContactAddToGroupTest" />
+      <item itemvalue="TestNG.ContactCreationTest" />
     </list>
     <recent_temporary>
       <list>
