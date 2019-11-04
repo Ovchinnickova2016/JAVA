@@ -20,10 +20,11 @@ public class RegistrationHelper extends HelperBase {
 
   }
 
-  public void finish(String confirmationLink, String username, String password) {
+  public void finish(String confirmationLink, String username, String password) throws InterruptedException {
     wd.get(confirmationLink);
     type(By.name("realname"), username);
     type(By.name("password"), password);
+    Thread.sleep(3000);
     type(By.name("password_confirm"), password);
     click(By.cssSelector("button[type='submit']"));
   }

@@ -14,8 +14,8 @@ public class ChangePassTests extends TestBase {
   @Test
   public void testRegistration() throws IOException, MessagingException, InterruptedException {
     long now = System.currentTimeMillis();
-    String email = String.format("user1572806671268@localhost", now);
-    String user = "user1572806671268";
+    String email = String.format("user1572882478157@localhost", now);
+    String user = "user1572882478157";
     String password = "1234";
     String user1 = String.format("user%s", now);
     String password1 = "password";
@@ -23,14 +23,16 @@ public class ChangePassTests extends TestBase {
     String adminpass = "root";
     app.loginAdmin().start(admin, adminpass);
     app.james().changePassword();
-    List<MailMessage> mailMessages = app.james().waitForMail(user, password, 60000);
+    Thread.sleep(20000);
+    List<MailMessage> mailMessages = app.james().waitForMail(user, password, 120000);
     String link = findLink(mailMessages, email);
     app.registration().finish(link, user, password);
     app.james().changePasswordFinish();
+    assertTrue(app.newSession().login(user, password));
   }
 
   private String findLink(List<MailMessage> mailMessages, String email) {
-    MailMessage mailMessage =  mailMessages.stream().filter((m)->m.to.equals(email)).reduce((first, second) -> second).get();
+    MailMessage mailMessage =  mailMessages.stream().filter((m)->m.to.equals(email)).findFirst().get();
     VerbalExpression regex = VerbalExpression.regex().find("http://").nonSpace().oneOrMore().build();
     return regex.getText(mailMessage.text);
   }
