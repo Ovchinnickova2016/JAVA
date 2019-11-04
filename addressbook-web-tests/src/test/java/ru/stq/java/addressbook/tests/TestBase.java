@@ -1,7 +1,5 @@
 package ru.stq.java.addressbook.tests;
 
-import org.hamcrest.CoreMatchers;
-import org.hamcrest.MatcherAssert;
 import org.openqa.selenium.remote.BrowserType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,7 +27,7 @@ public class TestBase {
 
   @BeforeSuite(alwaysRun = true)
   public void setUp() throws Exception {
-    app.init();
+    app.initi();
   }
 
   @AfterSuite(alwaysRun = true)

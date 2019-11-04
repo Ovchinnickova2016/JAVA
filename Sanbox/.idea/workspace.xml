@@ -62,6 +62,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1QUw0RVC6QZmkf3smKg7UnwcJ0t" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
@@ -98,7 +105,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.ContactDeletionTest">
+  <component name="RunManager" selected="TestNG.ContactAddToGroupTest">
     <configuration name="GroupDataGenerator" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stq.java.addressbook.generators.GroupDataGenerator" />
       <module name="addressbook-web-tests.test" />
@@ -218,10 +225,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ContactAddToGroupTest" />
         <item itemvalue="Gradle.ContactDeletionTest" />
         <item itemvalue="Gradle.ContactPhoneTest" />
         <item itemvalue="TestNG.ContactCreationTest" />
-        <item itemvalue="TestNG.ContactAddToGroupTest" />
         <item itemvalue="Gradle.ContactDeleteFromGroupTest" />
       </list>
     </recent_temporary>
