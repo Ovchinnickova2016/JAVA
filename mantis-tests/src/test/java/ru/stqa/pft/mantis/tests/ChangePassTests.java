@@ -10,7 +10,7 @@ import java.util.List;
 
 import static org.testng.Assert.assertTrue;
 
-public class ChagePassTests extends TestBase {
+public class ChangePassTests extends TestBase {
   @Test
   public void testRegistration() throws IOException, MessagingException, InterruptedException {
     long now = System.currentTimeMillis();
