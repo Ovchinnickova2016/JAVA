@@ -9,14 +9,16 @@ public class LoginAdminHelper extends HelperBase{
     super(app);
   }
 
-  public void start(String username, String password) throws UnsupportedEncodingException, InterruptedException {
+  public void start(String username, String password, String userId) throws UnsupportedEncodingException, InterruptedException {
     wd.get(app.getProperty("web.baseUrl") + "/login_page.php");
     type(By.name("username"), username);
     click(By.cssSelector("input[type='submit']"));
     type(By.name("password"), password);
     click(By.cssSelector("input[type='submit']"));
     wd.get(app.getProperty("web.baseUrl") + "/manage_user_page.php");
-    click(By.xpath("//a[@href='manage_user_edit_page.php?user_id=74']"));
+    String xpath = String.format("//a[@href='manage_user_edit_page.php?user_id=%s']", userId);
+    click(By.xpath(xpath));
+   // click(By.xpath("//a[@href='manage_user_edit_page.php?user_id=74']"));
     Thread.sleep(1000);
     click(By.cssSelector("input[value='—бросить пароль']"));
     Thread.sleep(1000);

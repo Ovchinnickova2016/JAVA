@@ -46,6 +46,11 @@
     <property name="project.structure.side.proportion" value="0.59770113" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.stqa.pft.mantis.appmanager" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -245,27 +250,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/tests/ChangePassTests.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="143" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/tests/ChangePassTests.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="144" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/tests/ChangePassTests.java</url>
-          <line>27</line>
+          <line>33</line>
           <option name="timeStamp" value="145" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/tests/ChangePassTests.java</url>
-          <line>28</line>
+          <line>34</line>
           <option name="timeStamp" value="149" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/tests/ChangePassTests.java</url>
-          <line>32</line>
+          <line>38</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
@@ -283,12 +278,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/LoginAdminHelper.java</url>
-          <line>20</line>
+          <line>22</line>
           <option name="timeStamp" value="153" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/LoginAdminHelper.java</url>
-          <line>18</line>
+          <line>20</line>
           <option name="timeStamp" value="157" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -423,7 +418,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/tests/ChangePassTests.java</url>
-          <line>34</line>
+          <line>40</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
@@ -431,12 +426,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/tests/ChangePassTests.java</url>
-          <line>35</line>
+          <line>41</line>
           <option name="timeStamp" value="185" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/tests/ChangePassTests.java</url>
-          <line>36</line>
+          <line>42</line>
           <option name="timeStamp" value="186" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -456,8 +451,46 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/tests/ChangePassTests.java</url>
-          <line>30</line>
+          <line>36</line>
           <option name="timeStamp" value="191" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/LoginAdminHelper.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="192" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/LoginAdminHelper.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="193" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/tests/ChangePassTests.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="194" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/tests/ChangePassTests.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="195" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/ApplicationManager.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/ApplicationManager.java</url>
+          <line>122</line>
+          <option name="timeStamp" value="198" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/stqa/pft/mantis/appmanager/ApplicationManager.java</url>
+          <line>120</line>
+          <properties class="ru.stqa.pft.mantis.appmanager.ApplicationManager" method="db">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="197" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
