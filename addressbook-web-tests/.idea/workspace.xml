@@ -12,6 +12,9 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+    <projectState path="$PROJECT_DIR$/../github-sample">
+      <ProjectState />
+    </projectState>
     <projectState path="$PROJECT_DIR$/../rest-sample">
       <ProjectState />
     </projectState>
@@ -46,7 +49,7 @@
   <component name="ProjectId" id="1T8vJR3qkWrdryIVa7nACG7tpuV" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../rest-sample/build.gradle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../github-sample/build.gradle" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15527344" />
     <property name="project.structure.side.proportion" value="0.43236995" />
