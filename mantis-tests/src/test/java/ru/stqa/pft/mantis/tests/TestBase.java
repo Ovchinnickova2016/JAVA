@@ -57,5 +57,32 @@ public class TestBase {
     if (isIssueOpen(issueId)) {
       throw new SkipException("Ignored because of issue " + issueId);
     }
+
   }
+
+
+
+
+
+  public static boolean isIssueOpen2(int issueId2) throws RemoteException, ServiceException, MalformedURLException {
+    boolean isFixed = true;
+    SoapHelper soapHelper = new SoapHelper(app);
+    MantisConnectPortType mc = soapHelper.getMantisConnect();
+    BigInteger issueId3 =BigInteger.valueOf (issueId2);
+    ObjectRef status =  mc.mc_issue_get("administrator","root",issueId3).getStatus();
+    if (status.getName().equals("resolved")){
+      isFixed = false;
+
+    }
+    return isFixed;
+  }
+
+
+  protected static void skipIfNotFixed2(int issueId) throws RemoteException, ServiceException, MalformedURLException {
+    if (isIssueOpen2(issueId)) {
+      throw new SkipException("Ignored because of issue " + issueId);
+    }
+
+  }
+
 }
