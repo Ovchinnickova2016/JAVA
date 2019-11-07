@@ -3,6 +3,10 @@ package ru.stqa.pft.mantis.tests;
 
 import biz.futureware.mantis.rpc.soap.client.MantisConnectPortType;
 import biz.futureware.mantis.rpc.soap.client.ObjectRef;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
+import org.apache.http.client.fluent.Request;
+import org.apache.http.message.BasicNameValuePair;
 import org.openqa.selenium.remote.BrowserType;
 import org.testng.SkipException;
 import org.testng.annotations.AfterSuite;
@@ -62,10 +66,17 @@ public class TestBase {
 
 
 
-
+/*
 
   public static boolean isIssueOpen2(int issueId2) throws RemoteException, ServiceException, MalformedURLException {
     boolean isFixed = true;
+    String json =    getExecutor().execute(Request.Post("https://bugify.stqa.ru/api/issues.json")
+      .bodyForm(new BasicNameValuePair("subject", newIssue.getSubject()),
+        new BasicNameValuePair("description", newIssue.getDescription())))
+      .returnContent().asString();
+    JsonElement parsed = JsonParser.parseString(json);
+    int fixed = parsed.getAsJsonObject().get();
+   // return  parsed.getAsJsonObject().get("issue_id").getAsInt();
     SoapHelper soapHelper = new SoapHelper(app);
     MantisConnectPortType mc = soapHelper.getMantisConnect();
     BigInteger issueId3 =BigInteger.valueOf (issueId2);
@@ -84,5 +95,5 @@ public class TestBase {
     }
 
   }
-
+*/
 }

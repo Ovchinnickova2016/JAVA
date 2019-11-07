@@ -118,10 +118,18 @@ public class ApplicationManager {
     }
     return soapHelper;
   }
-  public DbHelper db(){
-    return dbHelper;
-  }
-  public UserHelper users() {
+
+  public UserHelper user() {
+    if (userHelper == null) {
+      userHelper = new UserHelper(this);
+    }
     return userHelper;
+  }
+
+  public DbHelper db() {
+    if (dbHelper == null) {
+      dbHelper = new DbHelper(this);
+    }
+    return dbHelper;
   }
 }

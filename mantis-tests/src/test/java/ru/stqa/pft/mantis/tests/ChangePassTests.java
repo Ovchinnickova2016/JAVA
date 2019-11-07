@@ -19,15 +19,12 @@ public class ChangePassTests extends TestBase {
     Users users = app.db().users();
     UserData selectedUser = users.iterator().next();
     int userId = selectedUser.getId();
-    String user = selectedUser.getName();//"user1572881117609";
-    String email = selectedUser.getEmail();//String.format("user%s@localhost", user);
+    String user = selectedUser.getName();
+    String email = selectedUser.getEmail();
     String password = selectedUser.getPassword();//"1234";
-  //  User user1 = selectedUser.getId();
-   // String user1 =
     String admin = "administrator";
     String adminpass = "root";
     app.loginAdmin().start(admin, adminpass, Integer.toString(userId));
-    //app.users().changePassword(selectedUser);
     app.james().changePassword();
     Thread.sleep(20000);
     List<MailMessage> mailMessages = app.james().waitForMail(user, password, 120000);
