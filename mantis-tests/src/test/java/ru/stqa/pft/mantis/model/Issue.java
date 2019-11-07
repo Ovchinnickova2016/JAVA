@@ -6,6 +6,7 @@ public class Issue {
   private String description;
   private String status;
   private String name;
+  private String state_name;
   private Project project;
 
   public int getId() {
@@ -20,6 +21,10 @@ public class Issue {
   public String getName() {
     return name;
   }
+  public String getState_Name() {
+    return state_name;
+  }
+
 
   public Issue witName(String name) {
     this.name = name;

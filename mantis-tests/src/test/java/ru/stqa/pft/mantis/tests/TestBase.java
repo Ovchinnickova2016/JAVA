@@ -3,8 +3,11 @@ package ru.stqa.pft.mantis.tests;
 
 import biz.futureware.mantis.rpc.soap.client.MantisConnectPortType;
 import biz.futureware.mantis.rpc.soap.client.ObjectRef;
+import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
+import com.google.gson.reflect.TypeToken;
+import org.apache.http.client.fluent.Executor;
 import org.apache.http.client.fluent.Request;
 import org.apache.http.message.BasicNameValuePair;
 import org.openqa.selenium.remote.BrowserType;
@@ -18,6 +21,7 @@ import ru.stqa.pft.mantis.model.Project;
 
 import javax.xml.rpc.ServiceException;
 import java.io.File;
+import java.io.IOException;
 import java.math.BigInteger;
 import java.net.MalformedURLException;
 import java.rmi.RemoteException;
@@ -64,36 +68,29 @@ public class TestBase {
 
   }
 
+  private static Executor getExecutor() {
+    return Executor.newInstance().auth("288f44776e7bec4bf44fdfeb1e646490","");
+  }
 
 
-/*
-
-  public static boolean isIssueOpen2(int issueId2) throws RemoteException, ServiceException, MalformedURLException {
+  public static boolean isIssueOpen2(String issueId2) throws IOException, ServiceException {
     boolean isFixed = true;
-    String json =    getExecutor().execute(Request.Post("https://bugify.stqa.ru/api/issues.json")
-      .bodyForm(new BasicNameValuePair("subject", newIssue.getSubject()),
-        new BasicNameValuePair("description", newIssue.getDescription())))
-      .returnContent().asString();
+    String json =   getExecutor().execute(Request.Get("https://bugify.stqa.ru/api/issues/"+issueId2+".json")).returnContent().asString();
     JsonElement parsed = JsonParser.parseString(json);
-    int fixed = parsed.getAsJsonObject().get();
-   // return  parsed.getAsJsonObject().get("issue_id").getAsInt();
-    SoapHelper soapHelper = new SoapHelper(app);
-    MantisConnectPortType mc = soapHelper.getMantisConnect();
-    BigInteger issueId3 =BigInteger.valueOf (issueId2);
-    ObjectRef status =  mc.mc_issue_get("administrator","root",issueId3).getStatus();
-    if (status.getName().equals("resolved")){
+    JsonElement issues =  parsed.getAsJsonObject().get("issues");
+    Set<Issue> issue = new Gson().fromJson(issues, new TypeToken<Set<Issue>>(){
+    }.getType());
+    if (!issue.iterator().next().getState_Name().equals("Open")){
       isFixed = false;
-
     }
     return isFixed;
   }
 
 
-  protected static void skipIfNotFixed2(int issueId) throws RemoteException, ServiceException, MalformedURLException {
+  protected static void skipIfNotFixed2(String issueId) throws IOException, ServiceException {
     if (isIssueOpen2(issueId)) {
       throw new SkipException("Ignored because of issue " + issueId);
     }
-
   }
-*/
+
 }
