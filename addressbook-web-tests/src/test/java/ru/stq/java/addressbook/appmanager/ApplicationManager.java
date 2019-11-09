@@ -48,7 +48,7 @@ public class ApplicationManager {
     }
     else{
       System.setProperty("webdriver.gecko.driver", "E:\\geckodriver-v0.26.0-win64\\geckodriver.exe");
-      System.setProperty("webdriver.chrome.driver","F:/Õ¿—“ﬂ/JAVA/JAVA/addressbook-web-tests/chromedriver.exe");
+     // System.setProperty("webdriver.chrome.driver","F:/Õ¿—“ﬂ/JAVA/JAVA/addressbook-web-tests/chromedriver.exe");
       DesiredCapabilities capabilities = new DesiredCapabilities();
       //capabilities.setCapability("firefox_binary","C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");
      // capabilities.setCapability("marionette", false);
