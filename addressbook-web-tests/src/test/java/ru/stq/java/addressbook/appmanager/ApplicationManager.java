@@ -5,6 +5,7 @@ import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -51,9 +52,11 @@ public class ApplicationManager {
      // System.setProperty("webdriver.chrome.driver","F:/Õ¿—“ﬂ/JAVA/JAVA/addressbook-web-tests/chromedriver.exe");
       DesiredCapabilities capabilities = new DesiredCapabilities();
       //capabilities.setCapability("firefox_binary","C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");
-     // capabilities.setCapability("marionette", false);
+      capabilities.setCapability("marionette", false);
       capabilities.setBrowserName(browser);
       capabilities.setPlatform(Platform.fromString(System.getProperty("platform","win10")));
+      FirefoxOptions opt = new FirefoxOptions();
+      opt.merge(capabilities);
       wd = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), capabilities);
 
     }
