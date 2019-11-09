@@ -47,7 +47,7 @@ public class ApplicationManager {
       }
     }
     else{
-      //System.setProperty("webdriver.gecko.driver", "E://geckodriver-v0.26.0-win64/geckodriver.exe");
+      System.setProperty("webdriver.gecko.driver", "E://geckodriver-v0.26.0-win64/geckodriver.exe");
       DesiredCapabilities capabilities = new DesiredCapabilities();
    //   capabilities.setCapability("marionette", false);
       capabilities.setBrowserName(browser);
