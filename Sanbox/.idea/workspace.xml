@@ -265,7 +265,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/appmanager/ApplicationManager.java</url>
-          <line>34</line>
+          <line>39</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -280,8 +280,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/appmanager/ApplicationManager.java</url>
-          <line>30</line>
-          <properties class="ru.stq.java.addressbook.appmanager.ApplicationManager" method="init">
+          <line>34</line>
+          <properties class="ru.stq.java.addressbook.appmanager.ApplicationManager" method="initi">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="29" />
