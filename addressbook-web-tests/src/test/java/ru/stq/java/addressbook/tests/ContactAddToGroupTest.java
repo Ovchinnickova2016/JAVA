@@ -1,5 +1,6 @@
 package ru.stq.java.addressbook.tests;
 
+import com.sun.xml.fastinfoset.sax.Properties;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stq.java.addressbook.model.Contacts;
@@ -7,7 +8,7 @@ import ru.stq.java.addressbook.model.ContactsData;
 import ru.stq.java.addressbook.model.GroupData;
 import ru.stq.java.addressbook.model.Groups;
 
-import java.util.Properties;
+//import java.util.Properties;
 
 public class ContactAddToGroupTest extends TestBase {
   private final Properties properties = new Properties();;
