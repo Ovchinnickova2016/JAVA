@@ -49,10 +49,11 @@ public class ApplicationManager {
     else{
       System.setProperty("webdriver.gecko.driver", "E:/geckodriver-v0.26.0-win64/geckodriver.exe");
       DesiredCapabilities capabilities = new DesiredCapabilities();
-      capabilities.setCapability("marionatte", false);
+      capabilities.setCapability("marionette", false);
       capabilities.setBrowserName(browser);
       capabilities.setPlatform(Platform.fromString(System.getProperty("platform","win10")));
       wd = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), capabilities);
+
     }
       wd.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
       wd.get(properties.getProperty("web.baseURL"));
