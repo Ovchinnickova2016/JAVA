@@ -58,10 +58,10 @@ public class ApplicationManager {
       FirefoxOptions opt = new FirefoxOptions();
       opt.merge(capabilities);
       wd = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), capabilities);
-      wd.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
+
 
     }
-      wd.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+      wd.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
       wd.get(properties.getProperty("web.baseURL"));
       groupHelper = new GroupHelper(wd);
       navigationHelper = new NavigationHelper(wd);
