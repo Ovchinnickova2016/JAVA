@@ -47,19 +47,19 @@ public class DbHelper {
     session.close();
     return new Groups(result);
   }
-  public GroupData getGroupFromDB(int id) {
+  public GroupData getGroupsFromDB(int id) {
     Session session = sessionFactory.openSession();
     session.beginTransaction();
-    GroupData result = (GroupData) session.createQuery("from GroupData where id=" + id).getSingleResult();
+    GroupData result = (GroupData) session.createQuery("from GroupData where id=" + id).uniqueResult();
     session.getTransaction().commit();
     session.close();
     return result;
   }
 
-  public ContactsData getContactFromDB(int id) {
+  public ContactsData getContactsFromDB(int id) {
     Session session = sessionFactory.openSession();
     session.beginTransaction();
-    ContactsData result = (ContactsData) session.createQuery("from ContactsData where id=" + id).getSingleResult();
+    ContactsData result = (ContactsData) session.createQuery("from ContactsData where id=" + id).uniqueResult();
     session.getTransaction().commit();
     session.close();
     return result;

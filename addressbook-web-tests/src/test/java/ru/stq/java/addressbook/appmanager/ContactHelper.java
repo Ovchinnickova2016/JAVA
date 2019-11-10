@@ -158,21 +158,21 @@ public class ContactHelper extends HelperBase{
   }
 
   private void addContact(GroupData group) {
-   wd.findElement(By.name("to_group")).click();
-    wd.findElement(By.cssSelector("select[name=\"to_group\"] > option[value=\""+group.getId()+"\"]")).click();
+    click(By.name("to_group"));
+    click(By.cssSelector("select[name=\"to_group\"] > option[value=\""+group.getId()+"\"]"));
     click(By.name("add"));
   }
 
-  public void deleteContactFromGroup(ContactsData deletedContact, String group) {
-    selectGroupByName(group);
+  public void deleteContactFromGroup(ContactsData deletedContact, int groupID) {
+    selectGroupById2(groupID);
     selectContactById(deletedContact.getId());
     deleteContactById();
   }
 
-  private void selectGroupByName(String groupName) {
+  private void selectGroupById2(int groupID) {
     click(By.name("group"));
-    click(By.xpath("//form[@id='right']/select/option"));
-    //selectGroupByName(groupName);
+    click(By.cssSelector("select[name=\"group\"] > option[value=\""+groupID+"\"]"));
+  //  selectGroupById(groupID);
   }
 
   private void selectGroupById(int id) {

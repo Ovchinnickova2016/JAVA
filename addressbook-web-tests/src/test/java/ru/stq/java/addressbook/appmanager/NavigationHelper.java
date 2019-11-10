@@ -29,11 +29,7 @@ public class NavigationHelper extends HelperBase{
     click(By.linkText("home"));
   }
 
-  public void groupNeedfullPage(GroupData group) {
-    wd.findElement(By.linkText("group page \""+group.getName()+"\"")).click();
-  }
-
   public void groupCurrentPage(GroupData group) {
-    wd.findElement(By.linkText("group page \""+group.getName()+"\"")).click();
+    click(By.linkText("group page \""+group.getName()+"\""));
   }
 }

@@ -9,6 +9,10 @@ import ru.stq.java.addressbook.model.ContactsData;
 import ru.stq.java.addressbook.model.GroupData;
 import ru.stq.java.addressbook.model.Groups;
 
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.testng.Assert.assertEquals;
+
 //import java.util.Properties;
 
 public class ContactAddToGroupTest extends TestBase {
@@ -35,15 +39,14 @@ public class ContactAddToGroupTest extends TestBase {
     @Test
   public void testContactAddToGroup(){
       Groups groups = app.db().groups();
-      Groups group = app.db().groups();
-      Contacts contacts = app.db().contacts();
-      GroupData group1 = groups.iterator().next();
+      GroupData group = groups.iterator().next();
       Contacts before = app.db().contacts();
       ContactsData addedContact = NewContact(before);
       app.contact().goToHomePage();
-      app.contact().addContactToGroup(addedContact, group1);
+      app.contact().addContactToGroup(addedContact, group);
       app.contact().goToHomePage();
-      Assert.assertEquals(addedContact.getGroups().withAdded(group1), equals(app.db().getContactFromDB(addedContact.getId()).getGroups()));
+      Groups afterAdditionContacts = app.db().getContactsFromDB(addedContact.getId()).getGroups();
+      assertThat(afterAdditionContacts, equalTo(addedContact.getGroups().withAdded(group)));
     }
   private ContactsData NewContact(Contacts before) {
     for (ContactsData contact: before){
