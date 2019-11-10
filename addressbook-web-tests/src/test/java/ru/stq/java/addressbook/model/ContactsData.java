@@ -4,6 +4,7 @@ import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
 import org.hibernate.annotations.ManyToAny;
+import org.hibernate.annotations.Proxy;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
@@ -14,7 +15,9 @@ import java.util.Set;
 
 @XStreamAlias("contact")
 @Entity
+
 @Table(name = "addressbook")
+@Proxy(lazy =false)
 public class ContactsData {
   @XStreamOmitField
   @Id

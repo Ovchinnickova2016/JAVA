@@ -3,7 +3,7 @@ package ru.stq.java.addressbook.model;
 import com.google.gson.annotations.Expose;
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 import com.thoughtworks.xstream.annotations.XStreamOmitField;
-import org.hibernate.annotations.ManyToAny;
+import org.hibernate.annotations.Proxy;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
@@ -13,8 +13,9 @@ import java.util.Set;
 
 @XStreamAlias("group")
 @Entity
-@Table(name = "group_list")
 
+@Table(name = "group_list")
+@Proxy(lazy =false)
 public class GroupData {
 @XStreamOmitField
 @Id

@@ -16,9 +16,10 @@ import static org.testng.Assert.assertEquals;
 
 public class ContactDeletionTest extends TestBase{
 
-  Groups groups  = app.db().groups();
+
   @BeforeMethod
   public void ensurePreconditions(){
+    Groups groups  = app.db().groups();
     if (groups.size()==0){
       app.goTo().groupPage();
       GroupData group = new GroupData().withName("group3'");

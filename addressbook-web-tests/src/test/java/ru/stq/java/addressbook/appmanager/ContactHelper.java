@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import ru.stq.java.addressbook.model.Contacts;
 import ru.stq.java.addressbook.model.ContactsData;
+import ru.stq.java.addressbook.model.GroupData;
 import ru.stq.java.addressbook.model.Groups;
 
 import javax.swing.*;
@@ -151,25 +152,27 @@ public class ContactHelper extends HelperBase{
       .withHomePhone(home).withMobilePhone(mobile).withWorkPhone(work).withEmail(email).withEmail2(email2).withEmail3(email3).withAddress(address);
   }
 
-  public void addContactToGroup(ContactsData contact) {
+  public void addContactToGroup(ContactsData contact, GroupData group) {
     selectContactById(contact.getId());
-    addContactById();
+    addContact(group);
   }
 
-  private void addContactById() {
+  private void addContact(GroupData group) {
+   wd.findElement(By.name("to_group")).click();
+    wd.findElement(By.cssSelector("select[name=\"to_group\"] > option[value=\""+group.getId()+"\"]")).click();
     click(By.name("add"));
   }
 
-  public void deleteContactFromGroup(ContactsData deletedContact, int id) {
-    selectGroupByName(id);
+  public void deleteContactFromGroup(ContactsData deletedContact, String group) {
+    selectGroupByName(group);
     selectContactById(deletedContact.getId());
     deleteContactById();
   }
 
-  private void selectGroupByName(int id) {
+  private void selectGroupByName(String groupName) {
     click(By.name("group"));
     click(By.xpath("//form[@id='right']/select/option"));
-    selectGroupById(id);
+    //selectGroupByName(groupName);
   }
 
   private void selectGroupById(int id) {
@@ -180,7 +183,9 @@ public class ContactHelper extends HelperBase{
     click(By.name("remove"));
   }
 
-  public void goToGroupPage() {
-    click(By.linkText("group page 'group1'"));
+
+
+  public void goToHomePage() {
+    click(By.linkText("home"));
   }
 }

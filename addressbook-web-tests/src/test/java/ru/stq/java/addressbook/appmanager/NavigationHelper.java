@@ -2,6 +2,7 @@ package ru.stq.java.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import ru.stq.java.addressbook.model.GroupData;
 
 public class NavigationHelper extends HelperBase{
 
@@ -26,5 +27,13 @@ public class NavigationHelper extends HelperBase{
       return;
     }
     click(By.linkText("home"));
+  }
+
+  public void groupNeedfullPage(GroupData group) {
+    wd.findElement(By.linkText("group page \""+group.getName()+"\"")).click();
+  }
+
+  public void groupCurrentPage(GroupData group) {
+    wd.findElement(By.linkText("group page \""+group.getName()+"\"")).click();
   }
 }

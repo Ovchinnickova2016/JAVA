@@ -97,4 +97,7 @@ public class GroupHelper extends HelperBase{
     groupCache = null;
     returnToGroupPage();
   }
+  /*public void goToGroupPage(GroupData group) {
+    click(By.xpath("//a[contains(text(),'group page " test 3"')]"));
+  }*/
 }

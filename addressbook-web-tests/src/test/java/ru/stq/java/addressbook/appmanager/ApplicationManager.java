@@ -50,15 +50,15 @@ public class ApplicationManager {
     else{
       System.setProperty("webdriver.gecko.driver", "E:\\geckodriver-v0.26.0-win64\\geckodriver.exe");
       DesiredCapabilities capabilities = new DesiredCapabilities();
-      capabilities.setCapability("firefox_binary","C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");
-      capabilities.setCapability("marionette", false);
+    //  capabilities.setCapability("firefox_binary","C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");
+     // capabilities.setCapability("marionette", false);
       capabilities.setBrowserName(browser);
       capabilities.setPlatform(Platform.fromString(System.getProperty("platform","win10")));
       FirefoxOptions opt = new FirefoxOptions();
       opt.merge(capabilities);
       wd = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), capabilities);
     }
-      wd.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
+      wd.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
       wd.get(properties.getProperty("web.baseURL"));
       groupHelper = new GroupHelper(wd);
       navigationHelper = new NavigationHelper(wd);
