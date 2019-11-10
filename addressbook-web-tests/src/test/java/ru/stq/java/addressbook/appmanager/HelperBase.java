@@ -1,7 +1,6 @@
 package ru.stq.java.addressbook.appmanager;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 
@@ -32,15 +31,6 @@ public class HelperBase {
 
     if (file != null){
         wd.findElement(locator).sendKeys(file.getAbsolutePath());
-    }
-  }
-  public boolean isAlertPresent(){
-    try{
-      wd.switchTo().alert();
-      return true;
-    }
-    catch (NoAlertPresentException e){
-      return false;
     }
   }
 

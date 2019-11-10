@@ -8,9 +8,6 @@ import org.testng.Assert;
 import ru.stq.java.addressbook.model.Contacts;
 import ru.stq.java.addressbook.model.ContactsData;
 import ru.stq.java.addressbook.model.GroupData;
-import ru.stq.java.addressbook.model.Groups;
-
-import javax.swing.*;
 import java.util.List;
 
 public class ContactHelper extends HelperBase{
@@ -73,7 +70,6 @@ public class ContactHelper extends HelperBase{
     WebElement row = checkbox.findElement(By.xpath("./../.."));
     List<WebElement> cells = row.findElements(By.tagName("td"));
     cells.get(7).findElement(By.tagName("a")).click();
-    //wd.findElement(By.cssSelector("img[alt='Edit']")).click();
   }
 
   public void submitContactModification() {
@@ -172,18 +168,11 @@ public class ContactHelper extends HelperBase{
   private void selectGroupById2(int groupID) {
     click(By.name("group"));
     click(By.cssSelector("select[name=\"group\"] > option[value=\""+groupID+"\"]"));
-  //  selectGroupById(groupID);
-  }
-
-  private void selectGroupById(int id) {
-    click(By.id(String.valueOf(id)));
   }
 
   private void deleteContactById() {
     click(By.name("remove"));
   }
-
-
 
   public void goToHomePage() {
     click(By.linkText("home"));

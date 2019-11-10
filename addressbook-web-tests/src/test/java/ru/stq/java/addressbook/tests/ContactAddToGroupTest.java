@@ -1,7 +1,6 @@
 package ru.stq.java.addressbook.tests;
 
 import com.sun.xml.fastinfoset.sax.Properties;
-import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ru.stq.java.addressbook.model.Contacts;
@@ -11,9 +10,6 @@ import ru.stq.java.addressbook.model.Groups;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.testng.Assert.assertEquals;
-
-//import java.util.Properties;
 
 public class ContactAddToGroupTest extends TestBase {
   private final Properties properties = new Properties();;
