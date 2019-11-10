@@ -12,9 +12,10 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.testng.Assert.assertEquals;
 
 public class ContactModificationTest extends TestBase {
-  Groups groups  = app.db().groups();
+
   @BeforeMethod
   public void ensurePreconditions(){
+    Groups groups  = app.db().groups();
     if (groups.size()==0){
       app.goTo().groupPage();
       GroupData group = new GroupData().withName("group3'");
@@ -30,6 +31,7 @@ public class ContactModificationTest extends TestBase {
 
   @Test
   public void testContactModification (){
+    Groups groups  = app.db().groups();
     Contacts before = app.db().contacts();
     ContactsData modifiedContact = before.iterator().next();
     ContactsData contact = new ContactsData().withId(modifiedContact.getId()).withEmail("anast@gmail.com").withEmail2("ovh@gmail.com")

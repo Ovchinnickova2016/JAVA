@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4825fce7-1af9-443c-8982-13e8a659e03c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/build/classes/java/test/ru/stq/java/addressbook/appmanager/ApplicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/build/classes/java/test/ru/stq/java/addressbook/appmanager/ApplicationManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/build/classes/java/test/ru/stq/java/addressbook/model/Contacts.class" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/build/classes/java/test/ru/stq/java/addressbook/model/Contacts.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/build/classes/java/test/ru/stq/java/addressbook/tests/ContactModificationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/build/classes/java/test/ru/stq/java/addressbook/tests/ContactModificationTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/appmanager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/tests/ContactModificationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/tests/ContactModificationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Скрины для 21 задания/Результаты1.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/../Скрины для 21 задания/Результаты1.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Скрины для 21 задания/Результаты2.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/../Скрины для 21 задания/Результаты2.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Скрины для 21 задания/Результаты3.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/../Скрины для 21 задания/Результаты3.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Скрины для 21 задания/Результаты4.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/../Скрины для 21 задания/Результаты4.PNG" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +117,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ContactDeleteFromGroupTest">
+  <component name="RunManager" selected="TestNG.GroupModificationTest">
     <configuration name="GroupDataGenerator" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.stq.java.addressbook.generators.GroupDataGenerator" />
       <module name="addressbook-web-tests.test" />
@@ -158,25 +167,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ContactDeleteFromGroupTest.testContactDeleteFromGroup" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="addressbook-web-tests.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.stq.java.addressbook.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.stq.java.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stq.java.addressbook.tests.ContactDeleteFromGroupTest" />
-      <option name="METHOD_NAME" value="testContactDeleteFromGroup" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="0" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ContactDeletionTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
@@ -194,7 +184,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GroupDeletionTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ContactModificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="addressbook-web-tests.test" />
       <extension name="coverage">
         <pattern>
@@ -203,7 +193,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.stq.java.addressbook.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.stq.java.addressbook.tests.GroupDeletionTest" />
+      <option name="MAIN_CLASS_NAME" value="ru.stq.java.addressbook.tests.ContactModificationTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GroupModificationTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="addressbook-web-tests.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.stq.java.addressbook.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.stq.java.addressbook.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.stq.java.addressbook.tests.GroupModificationTest" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -214,18 +221,18 @@
     <list>
       <item itemvalue="Application.GroupDataGenerator" />
       <item itemvalue="TestNG.ContactAddToGroupTest" />
-      <item itemvalue="TestNG.ContactDeletionTest" />
       <item itemvalue="TestNG.ContactDeleteFromGroupTest" />
-      <item itemvalue="TestNG.GroupDeletionTest" />
-      <item itemvalue="TestNG.ContactDeleteFromGroupTest.testContactDeleteFromGroup" />
+      <item itemvalue="TestNG.ContactModificationTest" />
+      <item itemvalue="TestNG.ContactDeletionTest" />
+      <item itemvalue="TestNG.GroupModificationTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.GroupModificationTest" />
+        <item itemvalue="TestNG.ContactDeletionTest" />
+        <item itemvalue="TestNG.ContactModificationTest" />
         <item itemvalue="TestNG.ContactDeleteFromGroupTest" />
         <item itemvalue="TestNG.ContactAddToGroupTest" />
-        <item itemvalue="TestNG.ContactDeleteFromGroupTest.testContactDeleteFromGroup" />
-        <item itemvalue="TestNG.GroupDeletionTest" />
-        <item itemvalue="TestNG.ContactDeletionTest" />
       </list>
     </recent_temporary>
   </component>
