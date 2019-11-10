@@ -56,7 +56,7 @@ public class ApplicationManager {
       capabilities.setPlatform(Platform.fromString(System.getProperty("platform","win10")));
       FirefoxOptions opt = new FirefoxOptions();
       opt.merge(capabilities);
-      wd = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), capabilities);
+      wd = new RemoteWebDriver(new URL(properties.getProperty("selenium.server")), opt);
     }
       wd.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
       wd.get(properties.getProperty("web.baseURL"));
