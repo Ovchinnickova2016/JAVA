@@ -26,15 +26,29 @@ public class Contacts extends ForwardingSet<ContactsData> {
   protected Set<ContactsData> delegate() {
     return delegate;
   }
-  public Contacts withAdded(ContactsData contact){
+
+  public Contacts withAdded(ContactsData contact) {
     Contacts contacts = new Contacts(this);
     contacts.add(contact);
     return contacts;
   }
 
-  public Contacts without(ContactsData contact){
+  public Contacts without(ContactsData contact) {
     Contacts contacts = new Contacts(this);
     contacts.remove(contact);
     return contacts;
   }
+
+  public ContactsData getContactById(Contacts contacts, int id) {
+
+    for (ContactsData contact : contacts) {
+      if (contact.getId() == id) {
+        ContactsData contactWithId = contact;
+        return contactWithId;
+      }
+    }
+    return null;
+  }
+
+
 }

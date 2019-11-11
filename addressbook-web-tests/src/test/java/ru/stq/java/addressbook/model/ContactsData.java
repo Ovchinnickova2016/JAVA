@@ -215,7 +215,9 @@ public class ContactsData {
   public int getId() {
     return  id;
   }
-
+  public int getNextId() {
+    return  id=id+1;
+  }
   public String getHomePhone() {
     return home;
   }

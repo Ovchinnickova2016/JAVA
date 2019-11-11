@@ -35,25 +35,29 @@ public class ContactDeleteFromGroupTest extends TestBase {
   public void testContactDeleteFromGroup(){
     Groups groups = app.db().groups();
     Contacts contactsBefore = app.db().contacts();
-    GroupData group = app.db().getGroupsFromDB(NewContact(contactsBefore,groups).getId());
+    GroupData group = app.db().getGroupsFromDB(groupWithContacts(contactsBefore,groups).getId());
     Contacts contacts = group.getContacts();
     ContactsData deletedContact = contacts.iterator().next();
     app.contact().deleteContactFromGroup(deletedContact,group.getId());
     Contacts afterDeletionContacts = app.db().getGroupsFromDB(group.getId()).getContacts();
     assertThat(afterDeletionContacts, equalTo(contacts.without(deletedContact)));
-
   }
-  private GroupData NewContact(Contacts beforeContact, Groups groups) {
-    for (ContactsData contact : beforeContact) {
+  private GroupData groupWithContacts(Contacts beforeContacts, Groups groups) {
+    for (ContactsData contact : beforeContacts) {
       if (contact.getGroups().size() > 0) {
         Groups groupsWithContacts =  contact.getGroups();
         return groupsWithContacts.iterator().next();
       }
     }
-    ContactsData addedContact = beforeContact.iterator().next();
+    int nextId = app.contact().getNextId(beforeContacts);//for to know the next id for a new contact
+    app.contact().gotoContactPage();
+    app.contact().create(new ContactsData().withEmail("ovchinnickova.anast@gmail.com").withEmail2("ovch@gmail.com")
+      .withEmail3("galim@gmail.com").withFirstName("test2_new_add_to_group").withLastName("Ovchinnickova").withMobilePhone("44423422")
+      .withWorkPhone("231").withHomePhone("3232").withAddress("2 dd 3").withId(nextId));
+    ContactsData newContact = app.db().contacts().getContactById(app.db().contacts(), nextId); //new just created contact
     GroupData group = groups.iterator().next();
     app.goTo().goToHomePage();
-    app.contact().addContactToGroup(addedContact, group);
+    app.contact().addContactToGroup(newContact, group);
     app.goTo().groupCurrentPage(group);
     return group;
   }

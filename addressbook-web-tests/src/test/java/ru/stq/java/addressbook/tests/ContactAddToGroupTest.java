@@ -37,23 +37,25 @@ public class ContactAddToGroupTest extends TestBase {
       Groups groups = app.db().groups();
       GroupData group = groups.iterator().next();
       Contacts before = app.db().contacts();
-      ContactsData addedContact = NewContact(before);
+      ContactsData addedContact = newContact(before);
       app.contact().goToHomePage();
       app.contact().addContactToGroup(addedContact, group);
       app.contact().goToHomePage();
       Groups afterAdditionContacts = app.db().getContactsFromDB(addedContact.getId()).getGroups();
       assertThat(afterAdditionContacts, equalTo(addedContact.getGroups().withAdded(group)));
     }
-  private ContactsData NewContact(Contacts before) {
-    for (ContactsData contact: before){
-      if (contact.getGroups().size() == 0){
+  private ContactsData newContact(Contacts before) {
+  for (ContactsData contact: before){
+      if (contact.getGroups().size() < app.db().groups().size()){
         return contact;
       }
     }
+    int nextId = app.contact().getNextId(before);//for to know the next id for a new contact
+    app.contact().gotoContactPage();
     app.contact().create(new ContactsData().withEmail("ovchinnickova.anast@gmail.com").withEmail2("ovch@gmail.com")
-      .withEmail3("galim@gmail.com").withFirstName("nastya").withLastName("Ovchinnickova").withMobilePhone("44423422")
-      .withWorkPhone("231").withHomePhone("3232").withAddress("2 dd 3"));
-    Contacts newList = app.db().contacts();
-    return newList.iterator().next();
+      .withEmail3("galim@gmail.com").withFirstName("test_new_add_to_group").withLastName("Ovchinnickova").withMobilePhone("44423422")
+      .withWorkPhone("231").withHomePhone("3232").withAddress("2 dd 3").withId(nextId));
+    ContactsData newContact = app.db().contacts().getContactById(app.db().contacts(), nextId); //new just created contact
+    return newContact;
   }
 }

@@ -177,4 +177,14 @@ public class ContactHelper extends HelperBase{
   public void goToHomePage() {
     click(By.linkText("home"));
   }
+
+  public int getNextId(Contacts contacts) {
+    int max = 0;
+    for (ContactsData contact : contacts) {
+      if (contact.getId() > max) {
+        max= contact.getId();
+      }
+    }
+    return max+1;
+  }
 }
