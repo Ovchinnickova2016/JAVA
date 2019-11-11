@@ -3,18 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4825fce7-1af9-443c-8982-13e8a659e03c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/build/classes/java/test/ru/stq/java/addressbook/appmanager/ApplicationManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/build/classes/java/test/ru/stq/java/addressbook/appmanager/ApplicationManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/build/classes/java/test/ru/stq/java/addressbook/appmanager/ContactHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/build/classes/java/test/ru/stq/java/addressbook/appmanager/ContactHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/build/classes/java/test/ru/stq/java/addressbook/appmanager/GroupHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/build/classes/java/test/ru/stq/java/addressbook/appmanager/GroupHelper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/build/classes/java/test/ru/stq/java/addressbook/appmanager/HelperBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/build/classes/java/test/ru/stq/java/addressbook/appmanager/HelperBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/build/classes/java/test/ru/stq/java/addressbook/model/Contacts.class" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/build/classes/java/test/ru/stq/java/addressbook/model/Contacts.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/build/classes/java/test/ru/stq/java/addressbook/model/ContactsData.class" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/build/classes/java/test/ru/stq/java/addressbook/model/ContactsData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/build/classes/java/test/ru/stq/java/addressbook/tests/ContactAddToGroupTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/build/classes/java/test/ru/stq/java/addressbook/tests/ContactAddToGroupTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/build/classes/java/test/ru/stq/java/addressbook/tests/ContactDeleteFromGroupTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/build/classes/java/test/ru/stq/java/addressbook/tests/ContactDeleteFromGroupTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/appmanager/ContactHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/appmanager/ContactHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/model/Contacts.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/model/Contacts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/model/ContactsData.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/model/ContactsData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/tests/ContactAddToGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/tests/ContactAddToGroupTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/tests/ContactDeleteFromGroupTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/tests/ContactDeleteFromGroupTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -352,7 +340,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/../addressbook-web-tests/src/test/java/ru/stq/java/addressbook/tests/ContactDeleteFromGroupTest.java</url>
-          <line>61</line>
+          <line>62</line>
           <option name="timeStamp" value="98" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">

@@ -49,6 +49,7 @@ public class ContactDeleteFromGroupTest extends TestBase {
         return groupsWithContacts.iterator().next();
       }
     }
+    //если контактов нет, создаю контакт и помещаю его в группу
     int nextId = app.contact().getNextId(beforeContacts);//for to know the next id for a new contact
     app.contact().gotoContactPage();
     app.contact().create(new ContactsData().withEmail("ovchinnickova.anast@gmail.com").withEmail2("ovch@gmail.com")
@@ -59,6 +60,6 @@ public class ContactDeleteFromGroupTest extends TestBase {
     app.goTo().goToHomePage();
     app.contact().addContactToGroup(newContact, group);
     app.goTo().groupCurrentPage(group);
-    return group;
+    return group; //то есть в этой группе гарантированно один (только что созданный контакт) и его и удаляем в последствии из этой группы
   }
 }
